@@ -13,6 +13,9 @@
 - [Push](#push)
 - [How to actually create a repo](#how-to-actually-create-a-repo)
 
+
+- [Pull](#pull)
+
 ##### Installation
 
 ```
