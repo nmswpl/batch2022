@@ -150,6 +150,9 @@ remote origin/main  :   a -> b -> c
 local               :   a -> b -> d
 ```
 
+**Non conflict**
+
+
 sample **git pull** command result with conflicts
 
 ```
