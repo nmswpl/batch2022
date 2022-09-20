@@ -11,10 +11,14 @@
 - [Add or Modify](#add-or-modify-file)
 - [Commit](#commit)
 - [Push](#push)
-- [How to actually create a repo](#how-to-actually-create-a-repo)
-
+- [Commithash and logs](#commit-hash-and-logs)
 
 - [Pull](#pull)
+- [Non conflict and conflict scenario](#non-conflict-and-conflict-scenario)
+- [Best practices](#best-practices)
+
+
+- [How to actually create a repo](#how-to-actually-create-a-repo)
 
 ##### Installation
 
@@ -117,7 +121,58 @@ nothing to commit, working tree clean
 git push
 ```
 
-##### 
+
+##### Commit hash and logs
+
+To view the logs and commit details
+```
+git log
+git show <commithash>
+```
+
+##### Pull
+
+- To pull the latest repo changes to local
+
+```
+git pull
+```
+
+Actually git pull is a `git fetch` followed by `git merge`.
+
+##### Non conflict and conflict scenario
+
+When local repo got committed before properly updated.
+
+**Sample:**
+```
+remote origin/main  :   a -> b -> c
+local               :   a -> b -> d
+```
+
+sample **git pull** command result with conflicts
+
+```
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 671 bytes | 47.00 KiB/s, done.
+From https://github.com/nmswpl/batch2022
+   29f2437..0b9124b  main       -> origin/main
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+
+##### Best practices
+
+- Use update type as rebase (fetch and rebase) to keep the tree clean (without merge commit).
+- Always update before starting to write code / commit / push.
+- Never modify / remove others code without any discussion.
+- Use fitting / on to the point commit messages is highly recommended.
+- Commit the proper working version like collection of files (not like utils.java added).
 
 
 ##### How to actually create a repo
@@ -141,12 +196,4 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/nmswpl/batch2022.git
 git push -u origin main
-```
-
-##### Pull
-
-- To pull the latest repo changes to local
-
-```
-git pull
 ```
