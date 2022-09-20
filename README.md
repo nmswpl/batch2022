@@ -152,8 +152,15 @@ local               :   a -> b -> d
 
 **Non conflict**
 
+- git pull command runs successfully and asks for merge commit message to commit.
 
-sample **git pull** command result with conflicts
+**Sample**
+```
+Merge branch 'main' of https://github.com/nmswpl/batch2022 into main
+```
+
+
+**Conflict**
 
 ```
 remote: Enumerating objects: 5, done.
