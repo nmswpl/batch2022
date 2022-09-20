@@ -139,3 +139,11 @@ git branch -M main
 git remote add origin https://github.com/nmswpl/batch2022.git
 git push -u origin main
 ```
+
+##### Pull
+
+- To pull the latest repo changes to local
+
+```
+git pull
+```
