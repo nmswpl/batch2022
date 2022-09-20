@@ -27,7 +27,7 @@ sudo apt update
 sudo apt install git
 ```
 
-#### Configuration
+##### Configuration
 
 ```
 git config --global user.email bhanuchander210@gmail.com
