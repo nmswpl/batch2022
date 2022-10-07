@@ -2,7 +2,7 @@ package in.co.nmsworks.excersise;
 
 import java.util.Scanner;
 
-public class PowerOfNumberUsingFunction
+public class PowerOfNumber
 {
     public static void main(String[] args)
     {
@@ -11,7 +11,11 @@ public class PowerOfNumberUsingFunction
         int baseNumber =s.nextInt();
         System.out.println("enter the power number");
         int powerNumber=s.nextInt();
-        int powerValue= (int) Math.pow(baseNumber,powerNumber);
-        System.out.println(powerValue);
+        int ans=1;
+        for(int i=1;i<=powerNumber;i++)
+        {
+           ans*=baseNumber;
+        }
+        System.out.println(ans);
     }
 }
