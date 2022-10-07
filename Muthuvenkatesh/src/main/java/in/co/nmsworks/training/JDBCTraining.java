@@ -1,43 +1,45 @@
 package in.co.nmsworks.training;
-//
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.PreparedStatement;
-//import java.util.ArrayList;
-//
-//public class JDBCTraining {
-//
-//    private void select(){
-//        try{
-//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/Training");
-//            ArrayList<String> toDoList = new ArrayList<>();
-//            String s1 = "INSERT INTO TODOLIST VALUES (1,'Muthu','Iron Clothes','2022-10-05 04:35:09')";
-//            toDoList.add(s1);
-//            s1 = "INSERT INTO TODOLIST VALUES (2,'Bala','Washing Clothes','2022-10-05 04:44:13')";
-//            toDoList.add(s1);
-//            s1 = "INSERT INTO TODOLIST VALUES (3,'Arjun','reading Book','2022-10-05 04:47:18')";
-//            toDoList.add(s1);
-//            s1 = "INSERT INTO TODOLIST VALUES (4,'Krishna','Do Homework','2022-10-05 04:50:25')";
-//            toDoList.add(s1);
-//            s1 = "INSERT INTO TODOLIST VALUES (5,'Kamal Hasan','Watch movie','2022-10-05 04:59:35')";
-//            toDoList.add(s1);
-//            for (String s : toDoList) {
-//                PreparedStatement st = con.prepareStatement(s);
-//                st.executeUpdate();
-//            }
-//           System.out.println("Connected");
-//        }
-//        catch(Exception e){
-//            System.err.println("connection not obtained");
-//            e.printStackTrace();
-//
-//        }
-//    }
-//    public static void main(String[] args) {
-//        JDBCTraining jdbc = new JDBCTraining();
-//        jdbc.select();
-//    }
-//}
+
+/*
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+public class JDBCTraining {
+
+    private void select(){
+        try{
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/Training");
+            ArrayList<String> toDoList = new ArrayList<>();
+            String s1 = "INSERT INTO TODOLIST VALUES (1,'Muthu','Iron Clothes','2022-10-05 04:35:09')";
+            toDoList.add(s1);
+            s1 = "INSERT INTO TODOLIST VALUES (2,'Bala','Washing Clothes','2022-10-05 04:44:13')";
+            toDoList.add(s1);
+            s1 = "INSERT INTO TODOLIST VALUES (3,'Arjun','reading Book','2022-10-05 04:47:18')";
+            toDoList.add(s1);
+            s1 = "INSERT INTO TODOLIST VALUES (4,'Krishna','Do Homework','2022-10-05 04:50:25')";
+            toDoList.add(s1);
+            s1 = "INSERT INTO TODOLIST VALUES (5,'Kamal Hasan','Watch movie','2022-10-05 04:59:35')";
+            toDoList.add(s1);
+            for (String s : toDoList) {
+                PreparedStatement st = con.prepareStatement(s);
+                st.executeUpdate();
+            }
+           System.out.println("Connected");
+        }
+        catch(Exception e){
+            System.err.println("connection not obtained");
+            e.printStackTrace();
+
+        }
+    }
+    public static void main(String[] args) {
+        JDBCTraining jdbc = new JDBCTraining();
+        jdbc.select();
+    }
+}
+*/
 
 import java.sql.Connection;
 import java.sql.DriverManager;
