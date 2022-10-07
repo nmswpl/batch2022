@@ -1,10 +1,9 @@
-package in.co.nmsworks.exercise2;
+package in.co.nmsworks.exercise1;
+//vowel or consonant
 
 import java.util.Scanner;
-//given character is vowel or consonant
 
-public class VowelOrConsonant
-{
+public class Alphabet {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the character");
