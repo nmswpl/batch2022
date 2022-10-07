@@ -1,6 +1,6 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.excersise2;
 
-public class Excercise1
+public class Excersise1
 {
     public static void main(String[] args)
     {
