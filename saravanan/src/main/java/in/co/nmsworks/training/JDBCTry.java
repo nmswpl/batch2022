@@ -31,7 +31,6 @@ public class JDBCTry
                     ss.setString(3,studentDetailsArray[2]);
                     ss.setString(4,studentDetailsArray[3] );
                     ss.executeUpdate();
-
             }
             detailOfStudent.close();
         }
