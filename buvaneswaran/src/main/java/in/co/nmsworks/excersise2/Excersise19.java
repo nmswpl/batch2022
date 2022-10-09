@@ -2,19 +2,20 @@ package in.co.nmsworks.excersise2;
 
 public class Excersise19
 {
-    public static void main(String args[]){
-        int r,sum=0,temp;
-        int n=454;
+    public static void main(String[] args) {
 
-        temp=n;
-        while(n>0){
-            r=n%10;
-            sum=(sum*10)+r;
-            n=n/10;
+        String str = "level", reverseStr = "";
+
+        for (int i = str.length()-1; i >=0; --i)
+        {
+            reverseStr = reverseStr + str.charAt(i);
         }
-        if(temp==sum)
-            System.out.println("palindrome number ");
-        else
-            System.out.println("not palindrome");
+
+        if (str.equalsIgnoreCase(reverseStr)) {
+            System.out.println(str + " is a Palindrome String.");
+        }
+        else {
+            System.out.println(str + " is not a Palindrome String.");
+        }
     }
 }
