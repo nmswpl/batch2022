@@ -11,6 +11,7 @@ public class ArrayPosition {
 
         int[] arr = {3,5,6};
         int searchValue;
+        boolean bool = false;
         System.out.println("enter a search element:");
         Scanner sc = new Scanner(System.in);
         searchValue = sc.nextInt();
@@ -20,9 +21,16 @@ public class ArrayPosition {
             if(arr[i] == searchValue)
             {
                 System.out.println("output is:"+i);
+                bool = true;
             }
 
         }
+        if(bool == false)
+        {
+            System.out.println("output is: -1");
+        }
+
+
 
 
     }
