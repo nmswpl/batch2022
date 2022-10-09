@@ -1,6 +1,6 @@
 public class problem21 {
     //Write a program to Check Prime Number using a for loop
-    
+
     public static void main(String[] args) {
                 int n=9;
                 int count=0;

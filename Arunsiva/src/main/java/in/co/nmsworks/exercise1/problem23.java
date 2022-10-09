@@ -1,2 +1,19 @@
-package in.co.nmsworks.exercise1;public class problem23 {
+package in.co.nmsworks.exercise1;
+
+public class problem23 {
+    static int fact(int n){
+        if(n==0){
+            return 1;
+        }
+        else{
+            return n*fact(n-1);
+
+        }
+    }
+    public static void main(String[] args) {
+        int n=0;
+        System.out.println(fact(n));
+
+
+    }
 }
