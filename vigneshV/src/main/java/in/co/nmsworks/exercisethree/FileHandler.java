@@ -10,18 +10,23 @@ public class FileHandler
         ReadFile filereader = new ReadFile();
         List<Integer> numbers = new ArrayList<>(filereader.fileParser("/home/nmsadmin/Downloads/Numbers.txt"));
         searchDuplicate(numbers);
-        //findOccurance(numbers);
+        findOccurrence(numbers);
 
 
     }
 
-//    private static void findOccurance(List<Integer> numbers)
-//    {
-//        Map<Integer,Integer> map = new HashMap<>();
-//        for(int i :numbers)
-//            map.put(i,map.getOrDefault(i,0)+1);
-//        System.out.println(map);
-//    }
+
+    private static void findOccurrence(List<Integer> numbers)
+    {
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int i :numbers)
+            map.put(i,map.getOrDefault(i,0)+1);
+        for (Map.Entry<Integer,Integer> i: map.entrySet())
+        {
+            if(i.getValue()>1)
+                System.out.println(i.getKey()+" ---- "+i.getValue());
+        }
+    }
 
     private static void searchDuplicate(List<Integer> numbers)
     {
