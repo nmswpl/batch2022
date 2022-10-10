@@ -1,8 +1,8 @@
-package in.co.nmsworks.training.practice;
+package in.co.nmsworks.training.excercise2;
 
 import java.util.Scanner;
 
-public class condition {
+public class EvenOrAdd {
     public static void main(String[] args) {
         Scanner numbers = new Scanner(System.in);
         System.out.println("Enter a number");

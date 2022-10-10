@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise1.practice;
+package in.co.nmsworks.excercise1;
 
 public class PrintEvenNumbers
 {
