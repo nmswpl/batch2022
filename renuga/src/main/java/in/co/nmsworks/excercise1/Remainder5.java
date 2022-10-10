@@ -1,5 +1,6 @@
 package in.co.nmsworks.excercise1;
 
+/*Write a program to Compute Quotient and Remainder*/
 public class Remainder5 {
     public static void main(String[] args) {
 
