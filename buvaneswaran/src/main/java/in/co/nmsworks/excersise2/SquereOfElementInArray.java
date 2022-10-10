@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise7
+
+//.Write a program to print the square of every element present in the array.
+public class SquereOfElementInArray
 {
     public static void main(String[] args) {
         int[] arr={2, 4, 3, 5};

@@ -2,7 +2,8 @@ package in.co.nmsworks.excersise2;
 
 import java.util.Scanner;
 
-public class Excersise16
+//Write a program using Recursion to find and print the factorial of a number.
+public class Recursion
 {
     public static int fibbo(int number)
     {

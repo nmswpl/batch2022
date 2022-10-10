@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise15
+
+//Given an array of integers, Write a Program to count and print even elements.
+public class PrintEvenElementInArray
 {
     public static void main(String[] args)
     {

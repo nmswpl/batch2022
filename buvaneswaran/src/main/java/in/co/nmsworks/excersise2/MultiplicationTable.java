@@ -2,7 +2,8 @@ package in.co.nmsworks.excersise2;
 
 import java.util.Scanner;
 
-public class Excersise6
+//Write a program to print the multiplication table of 17 upto 10 numbers.
+public class MultiplicationTable
 {
     public static void main(String[] args)
     {

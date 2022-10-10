@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise8
+
+//Given a 3 digit number, write a program to print the hundred position value in words.
+public class HundredPositionNumber
 {
     public static void main(String[] args)
     {

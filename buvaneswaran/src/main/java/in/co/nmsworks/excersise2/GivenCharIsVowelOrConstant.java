@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise5
+
+//Write a program to check if a given Character is a Vowel or Consonant.
+public class GivenCharIsVowelOrConstant
 {
     public static void main(String[] args)
     {

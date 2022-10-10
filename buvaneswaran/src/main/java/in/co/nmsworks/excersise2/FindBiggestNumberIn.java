@@ -2,7 +2,9 @@ package in.co.nmsworks.excersise2;
 
 import java.util.Scanner;
 
-public class Excersise11
+
+//Write a program to print the biggest of the 3 numbers
+public class FindBiggestNumberIn
 {
     public static void main(String[] args)
     {

@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise17
+
+//Given an array of integer, Write a Program to find the largest element in the given array.
+public class LargestElementInArray
 {
     public static void main(String[] args)
     {

@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise12
+
+//Given an array of integers, Write a Program to print number of odd elements.
+public class OddElementInArray
 {
     public static void main(String[] args)
     {

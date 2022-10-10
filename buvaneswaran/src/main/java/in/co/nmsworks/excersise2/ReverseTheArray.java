@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise14
+
+// Given an array of String, Write a Program to reverse the array and print.
+public class ReverseTheArray
 {
     public static void main(String[] args)
     {

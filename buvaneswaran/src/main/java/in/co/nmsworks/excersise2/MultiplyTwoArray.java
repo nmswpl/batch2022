@@ -1,6 +1,7 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise3
+//Write a program to multiply two arrays of same size element-by-element.
+public class MultiplyTwoArray
 {
     public static void main(String[] args)
     {

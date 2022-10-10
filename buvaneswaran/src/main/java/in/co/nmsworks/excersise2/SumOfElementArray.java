@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise13
+
+//Given an array of integers, Write a Program to find the sum of the elements of the array.
+public class SumOfElementArray
 {
     public static void main(String[] args)
     {

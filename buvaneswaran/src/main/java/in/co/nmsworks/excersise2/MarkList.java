@@ -2,7 +2,8 @@ package in.co.nmsworks.excersise2;
 
 import java.util.Scanner;
 
-public class Excersise2
+// Write a program to print the Grade for given Mark.
+public class MarkList
 {
     public static void main(String[] args)
     {

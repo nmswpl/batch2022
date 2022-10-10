@@ -1,6 +1,8 @@
 package in.co.nmsworks.excersise2;
 
-public class Excersise19
+
+//Given a String, Write a program to find if the string is palindrome or Not
+public class Palindrome
 {
     public static void main(String[] args) {
 
