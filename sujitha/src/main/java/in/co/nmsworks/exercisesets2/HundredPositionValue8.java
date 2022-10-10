@@ -10,6 +10,16 @@ public class HundredPositionValue8 {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter a number: ");
         int number= sc.nextInt();
+        String[] valueInWords={"0ne","two","three","four","five","six","seven","eight","nine"};
+        int result=number/100;
+        //System.out.println(" "+result);
+        for (int i=1;i<=valueInWords.length;i++)
+        {
+            if(result==i)
+            {
+                System.out.println(valueInWords[i-1]);
+            }
+        }
 
     }
 }
