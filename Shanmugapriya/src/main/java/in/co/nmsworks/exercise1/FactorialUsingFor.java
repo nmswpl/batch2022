@@ -11,7 +11,7 @@ public class FactorialUsingFor
         int numbers = S.nextInt();
         int fact = 1;
 
-        for ( int i = 1; i <= numbers; i++)
+        for ( int i = numbers; i <= 1; i--)
         {
             fact = fact * i;
         }
