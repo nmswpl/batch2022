@@ -8,11 +8,12 @@ public class ArrayMultiplication3
         int[] arr1={2,4,1};
         int[] arr2={3,5,7};
 
-       int output1=arr1[0]*arr2[0];
+        int output1=arr1[0]*arr2[0];
         int output2=arr1[1]*arr2[1];
         int output3=arr1[2]*arr2[2];
 
         System.out.println("output :"+" "+output1+" "+output2+" "+output3);
+
 
 
     }

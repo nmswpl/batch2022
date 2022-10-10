@@ -8,18 +8,28 @@ public class ReverseOfArray14 {
     public static void main(String[] args) {
 
         String[] array={"sujitha","thilaga","divya","renuga"};
-        System.out.println("reverse of array");
-        for (int i=0;i<array.length;i++)
-        {
-            System.out.println(array[i]);
-        }
-        System.out.println("----------");
+        System.out.println("original string is : "+ Arrays.toString(array));
 
-        for (int i=array.length-1;i>=0;i--)
+
+        int start=0;
+        int length=array.length;
+        int end=length-1;
+        String temp;
+
+        for (int i=0;i<length/2;i++)
         {
-            System.out.println(array[i]);
+            temp=array[i];
+            array[i]=array[end];
+            array[end]=temp;
+            end--;
 
         }
+        System.out.println("reverse of string is: "+Arrays.toString(array));
+
+
+
+
+
 
     }
 }

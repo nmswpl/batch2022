@@ -5,9 +5,14 @@ public class NumberEndingWithSeven10
 {
     public static void main(String[] args)
     {
+        int result;
         for(int i=200;i<=500;i++)
         {
-            System.out.println(i);
+            result=i%10;
+            if(result==7)
+            {
+                System.out.println(i);
+            }
         }
     }
 }

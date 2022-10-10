@@ -16,8 +16,8 @@ public class FactorialOfNumber16 {
     public static void main(String[] args)
     {
         int number;
-        FactorialOfNumber16.factorial(5);
-        System.out.println(factorial(5));
+        int result = FactorialOfNumber16.factorial(5);
+        System.out.println("factorial of number is "+result);
 
     }
 }

@@ -1,3 +1,4 @@
+/*5. Write a program to check if a given Character is a Vowel or Consonant.*/
 package in.co.nmsworks.exercisesets2;
 
 import java.util.Scanner;
