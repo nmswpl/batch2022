@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 //Print an Integer entered by the User
 public class PrintInt {
-
     public static void main(String[] args) {
 
         Scanner s=new Scanner(System.in);
