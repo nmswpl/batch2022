@@ -8,8 +8,9 @@ import static in.co.nmsworks.excercise3.ReadElements.readFile;
 public class Duplicate
 {
 
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
+        try{
 
         List<Integer> listofinteger = readFile("/home/nmsadmin/Downloads/Numbers.txt");
         System.out.println("List of Integer :"+listofinteger);
@@ -19,7 +20,7 @@ public class Duplicate
         List<Integer> noduplicate = new ArrayList<>();
 
 
-        for( int  i : listofinteger)
+        for( int  integer : listofinteger)
         {
            if(noduplicate.contains(i))
                duplicate.add(i);
@@ -28,7 +29,12 @@ public class Duplicate
         }
 
         System.out.println("Duplicate = "+duplicate);
-
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error");
+            e.printStackTrace;
+        }
 
     }
 }
