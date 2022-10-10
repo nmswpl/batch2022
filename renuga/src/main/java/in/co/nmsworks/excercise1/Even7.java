@@ -2,6 +2,8 @@ package in.co.nmsworks.excercise1;
 
 import java.util.Scanner;
 
+/*Check whether a number is even or odd using if...else statement*/
+
 public class Even7 {
     public static void main(String[] args) {
 
