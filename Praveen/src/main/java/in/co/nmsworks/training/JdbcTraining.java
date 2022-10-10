@@ -17,18 +17,18 @@ public class JdbcTraining {
         try {
             connect=DriverManager.getConnection("jdbc:mysql://127.0.0.1/training");
             List<String[]> queries = new ArrayList<>();
-            queries.add(new String[]{"", "",""});
-            queries.add(new String[]{"", "",""});
-            queries.add(new String[]{"", "",""});
-            queries.add(new String[]{"", "",""});
-
+            queries.add(new String[]{"Praveen", "Read Sql","2022-10-06 7:00:00"});
+            queries.add(new String[]{"Naveen", "Read Java","2022-10-07 7:00:00"});
+            queries.add(new String[]{"Sakthi", "Read Js","2022-10-08 7:00:00"});
+            queries.add(new String[]{"Sridhar", "Read Linux","2022-10-09 7:00:00"});
+            stmt = connect.prepareStatement("insert into TodoList values (?,?,?,?)");
+            System.out.println(queries.size());
             for (int i = 0; i < queries.size(); i++) {
-                stmt = connect.prepareStatement("insert into TodoList values (?,?,?,?)");
-                stmt.setInt(0, i+1);
-                stmt.setString(1, queries.get(i)[0]);
-                stmt.setString(2, queries.get(i)[1]);
-                stmt.setString(3, queries.get(i)[2]);
 
+                stmt.setInt(1, i+1);
+                stmt.setString(2, queries.get(i)[0]);
+                stmt.setString(3, queries.get(i)[1]);
+                stmt.setString(4, queries.get(i)[2]);
                 stmt.executeUpdate();
             }
 
@@ -48,7 +48,7 @@ public class JdbcTraining {
         }
             catch (Exception e)
             {
-                System.out.println("error");
+                System.err.println("error");
             }
     }
 }
