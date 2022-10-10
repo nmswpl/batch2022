@@ -19,7 +19,7 @@ public class ReadFile {
         {
             numbersList.add(Integer.valueOf(i));
         }
-            System.out.println("numbersList  "+ numbersList);
+
 
         br.close();
         return numbersList;
