@@ -1,7 +1,7 @@
 package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//Count Number of Digits in an Integer using while loop
 public class practice18
 {
     public static void main(String[] args)

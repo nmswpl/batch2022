@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//19.Calculate the power of a number using a for loop.
 import java.util.Scanner;
 
 public class practice19

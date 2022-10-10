@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Generate Multiplication Table using for loop
 public class practice15
 {
     public static void main(String[] args) {

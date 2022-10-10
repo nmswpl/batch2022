@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Write a program to Swap two numbers using temporary variable
 public class practice6
 {
     public static void main(String[] args)

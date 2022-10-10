@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Calculate the power of a number using pow() function
 import java.util.Scanner;
 
 public class practice20 {

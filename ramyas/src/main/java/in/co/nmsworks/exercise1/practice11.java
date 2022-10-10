@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Write a program to Check Alphabet using if else
 import java.util.Scanner;
 
 public class practice11

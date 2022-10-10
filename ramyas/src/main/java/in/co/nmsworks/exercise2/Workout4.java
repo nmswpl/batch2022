@@ -8,13 +8,29 @@ import java.util.Scanner;
 //Search Element : 5 Output : -1
 public class Workout4
 {
-    public static void main(String[] args)
-    {
-        int[] arr = {7,15,41};
-        Scanner sc = new Scanner(System.in);
-        int element = sc.nextInt();
-        System.out.println("SEARCH ELEMENT : ");
+    public static void main(String[] args) {
 
+        int[] arr = {23,34,67,12,10};
+
+        System.out.println("SEARCH ELEMENT : ");
+        Scanner sc = new Scanner(System.in);
+        int no = sc.nextInt();
+
+        int index = 0;
+
+        for (int i = 0; i < arr.length; i++)
+        {
+            if(arr[i]==no)
+            {
+                index = i;
+                break;
+            }
+            else
+            {
+                index = -1;
+            }
+        }
+        System.out.println(index);
 
     }
 }

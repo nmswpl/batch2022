@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Write a program to find the Sum of Natural Numbers using for loop
 import java.util.Scanner;
 
 public class practice12

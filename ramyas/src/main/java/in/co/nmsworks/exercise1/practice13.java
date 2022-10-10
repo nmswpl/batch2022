@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Write a program to Find Factorial of a number using for loop
 import java.util.Scanner;
 
 public class practice13

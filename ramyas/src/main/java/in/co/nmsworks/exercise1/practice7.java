@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Check whether a number is even or odd using if...else statement
 import java.util.Scanner;
 
 public class practice7

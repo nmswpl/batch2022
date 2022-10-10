@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Write a program to Check whether an alphabet is vowel or consonant using if..else statement
 public class practice8
 {
     public static void main(String[] args)

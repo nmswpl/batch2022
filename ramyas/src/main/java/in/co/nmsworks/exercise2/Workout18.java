@@ -5,5 +5,16 @@ package in.co.nmsworks.exercise2;
 //times in array
 public class Workout18
 {
-
+    public static void main(String[] args)
+    {
+       int[] arr = {1, 2, 3, 2, 2, 3};
+       int no = 3;
+       int count = 0;
+        for (int i = 0; i < arr.length; i++)
+        {
+            if(arr[i] == no)
+             count++;
+        }
+        System.out.println(count);
+    }
 }

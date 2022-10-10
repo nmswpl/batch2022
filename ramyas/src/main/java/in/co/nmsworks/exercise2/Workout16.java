@@ -5,6 +5,16 @@ public class Workout16
 {
     public static void main(String[] args)
     {
+      int no = 5;
+      int fact = factorial(no);
+        System.out.println(fact);
+    }
+    public static int factorial(int no)
+    {
+        if(no>=1)
+         return  no * factorial(no - 1);
+        else
+           return 1;
 
     }
 }

@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise1;
-
+//Write a program to Check if a Number is Positive or Negative using if else
 import java.util.Scanner;
 
 public class practice10
