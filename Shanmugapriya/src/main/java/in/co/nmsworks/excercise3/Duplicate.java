@@ -22,10 +22,10 @@ public class Duplicate
 
         for( int  integer : listofinteger)
         {
-           if(noduplicate.contains(i))
-               duplicate.add(i);
+           if(noduplicate.contains(integer))
+               duplicate.add(integer);
            else
-               noduplicate.add(i);
+               noduplicate.add(integer);
         }
 
         System.out.println("Duplicate = "+duplicate);
