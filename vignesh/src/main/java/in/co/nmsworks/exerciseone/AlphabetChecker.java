@@ -20,4 +20,4 @@ public class AlphabetChecker {
 }
 
 
-//     11. Write a program to Check Alphabet using if else
+//     11. Write a program to Check Alphabet using if - else
