@@ -1,5 +1,6 @@
 package in.co.nmsworks.excercise1;
 
+/*1. Write a Program to Print an Integer entered by the User*/
 import java.util.Scanner;
 
 public class Number1 {
@@ -10,4 +11,5 @@ public class Number1 {
         number1=input.nextInt();
         System.out.println("you enter num : "+ number1);
     }
+
 }
