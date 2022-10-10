@@ -1,5 +1,7 @@
 package in.co.nmsworks.excercise1;
 
+/*11. Write a program to Check Alphabet using if else*/
+
 public class Vowel11 {
     public static void main(String[] args) {
         char ch ='*';
