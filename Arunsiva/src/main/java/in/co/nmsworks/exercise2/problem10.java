@@ -11,6 +11,7 @@ public class problem10 {
              System.out.println(i);
         }
 
+
         }
     }
 }
