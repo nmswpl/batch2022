@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 
 public class problem2 {
     public static void main(String[] args)

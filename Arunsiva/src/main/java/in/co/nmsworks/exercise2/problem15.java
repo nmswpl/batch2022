@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //Given an array of integers, Write a Program to count and print even elements.
 
 public class problem15 {

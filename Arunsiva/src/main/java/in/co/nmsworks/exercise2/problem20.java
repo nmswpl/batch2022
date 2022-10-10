@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //Given an integer x, Write a Program to check whether x is Prime or not ?
 public class problem20
 {

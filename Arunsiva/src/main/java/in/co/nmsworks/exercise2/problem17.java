@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //. Given an array of integer, Write a Program to find the largest element in the given array
 public class problem17 {
     public static void main(String[] args) {

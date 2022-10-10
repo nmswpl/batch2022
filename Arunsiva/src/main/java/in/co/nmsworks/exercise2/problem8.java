@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 
 //Given a 3 digit number, write a program to print the hundred position value in words.
 

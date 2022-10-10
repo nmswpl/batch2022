@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //Given a String, Write a program to find if the string is palindrome or Not.
 public class problem19 {
     public static void main(String[] args) {

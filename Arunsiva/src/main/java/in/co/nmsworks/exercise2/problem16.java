@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //16. Write a program using Recursion to find and print the factorial of a number.
 public class problem16 {
     static int fact(int num)

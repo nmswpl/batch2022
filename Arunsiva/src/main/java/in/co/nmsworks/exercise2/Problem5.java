@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 
 //Write a program to check if a given Character is a Vowel or Consonant.
 

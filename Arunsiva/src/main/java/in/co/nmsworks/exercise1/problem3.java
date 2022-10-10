@@ -4,7 +4,8 @@ package in.co.nmsworks.exercise1;
 
 
 public class problem3 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         float n1,n2,n3;
         n1=1.5f;
         n2=2.0f;

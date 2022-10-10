@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 
 //Write a program to print all numbers divisble by 3 greater than 300 and less than 400.
 

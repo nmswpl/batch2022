@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //Write a program to print the square of every element present in the array.
 public class problem7 {
     public static void main(String[] args) {

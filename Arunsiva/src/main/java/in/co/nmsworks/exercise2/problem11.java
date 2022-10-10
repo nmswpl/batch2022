@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 //Write a program to print the biggest of the 3 numbers
 
 public class problem11

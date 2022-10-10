@@ -1,4 +1,4 @@
-package in.co.nmsworks.excercise2;
+package in.co.nmsworks.exercise2;
 
 //Write a program to print the multiplication table of 17 upto 10 numbers.
 
