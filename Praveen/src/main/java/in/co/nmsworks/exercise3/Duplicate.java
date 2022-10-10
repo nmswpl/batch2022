@@ -11,7 +11,7 @@ import java.util.Set;
 public class Duplicate {
 
 
-    public static void main(String[] args) throws IOException
+     public static void main(String[] args) throws IOException
     {
         String filepath="/home/nmsadmin/Downloads/Numbers.txt";
         ReadFile readFile=new ReadFile();
