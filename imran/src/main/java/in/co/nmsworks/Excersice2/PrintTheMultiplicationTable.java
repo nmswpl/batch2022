@@ -1,11 +1,13 @@
 package in.co.nmsworks.Excersice2;
 
 
+import java.util.Scanner;
 
 public class PrintTheMultiplicationTable
 {
     public static void main(String[] args) {
-        int number = 17;
+        Scanner inp = new Scanner(System.in);
+        int number = inp.nextInt();
 
         for(int i = 1; i <=10 ; i++)
         {
