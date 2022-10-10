@@ -2,6 +2,9 @@ package in.co.nmsworks.excercise1;
 
 import java.util.Scanner;
 
+/*12. Write a program to find the Sum of Natural Numbers using for loop*/
+
+
 public class NaturalNum12 {
     public static void main(String[] args) {
         int num=0,sum=0;
