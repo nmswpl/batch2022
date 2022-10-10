@@ -5,7 +5,7 @@ import java.util.List;
 
 import static in.co.nmsworks.Excersice3.FindDuplicatesInAFile.findDuplicates;
 import static in.co.nmsworks.Excersice3.ReadFile.readfile;
-
+import static in.co.nmsworks.Excersice3.NumberOfOccurance.numberOfOccurance;
 public class FindDuplicatesMain
 {
     public static void main(String[] args) throws IOException {
@@ -13,5 +13,7 @@ public class FindDuplicatesMain
         List<Integer> duplicateValueList = findDuplicates(readedFileList);
         System.out.println("Original List : "+readedFileList);
         System.out.println("DuplicateList : "+duplicateValueList);
+        numberOfOccurance(readedFileList,duplicateValueList);
+
     }
 }

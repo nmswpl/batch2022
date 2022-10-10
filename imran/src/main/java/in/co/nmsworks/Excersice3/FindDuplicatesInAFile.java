@@ -10,22 +10,21 @@ public class FindDuplicatesInAFile
 {
     public static List<Integer> findDuplicates(List<Integer> originallist)
     {
-        List<Integer> withoutDuplicate = new ArrayList<>();
         List<Integer> duplicateOnly = new ArrayList<>();
+        List<Integer> withoutDuplicate = new ArrayList<>();
 
 
         for (int i : originallist)
         {
-            if(duplicateOnly.contains(i))
-            {
-                withoutDuplicate.add(i);
-            }
-            else
+            if(withoutDuplicate.contains(i))
             {
                 duplicateOnly.add(i);
             }
+            else
+            {
+               withoutDuplicate.add(i);
+            }
         }
-        System.out.println("Non Duplicate List : "+withoutDuplicate);
 
         return duplicateOnly;
     }
