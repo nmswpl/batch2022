@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise2;
-
+//Write a program to print the Grade for given Mark.
 public class problem2 {
     public static void main(String[] args)
     {

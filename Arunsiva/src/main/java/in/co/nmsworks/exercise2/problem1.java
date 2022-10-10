@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise2;
-
+//Write a program to print all even numbers between 601 and 700 in descending order.
 public class problem1 {
     public static void main(String[] args) {
         System.out.print("even numbers from 600 to 700 in descending order : ");
