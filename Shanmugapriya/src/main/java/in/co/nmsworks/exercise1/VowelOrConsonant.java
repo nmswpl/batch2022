@@ -1,8 +1,6 @@
 package in.co.nmsworks.exercise1;
 
-
 import java.util.Scanner;
-
 // vowel or consonant
 public class VowelOrConsonant
 {
