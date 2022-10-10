@@ -1,8 +1,10 @@
+//a program for to print the grade for the respective marks(2)
+
 package in.co.nmsworks.exercise2;
 
 import java.util.Scanner;
 
-public class e2 {
+public class Grade2 {
     public static void main(String[] args) {
         System.out.println("Enter your Mark:");
         Scanner sc=new Scanner(System.in);
