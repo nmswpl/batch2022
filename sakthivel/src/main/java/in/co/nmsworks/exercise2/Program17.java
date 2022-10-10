@@ -23,7 +23,7 @@ public class Program17
                 }
                 if(count>1)
                 {
-                    System.out.println(arr[j] +"="+count);
+                    System.out.println(arr[i] +"="+count);
                 }
             }
 
