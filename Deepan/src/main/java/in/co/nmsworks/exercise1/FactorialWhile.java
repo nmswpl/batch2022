@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class FactorialWhile {
 
+    //Factorial using while loop
     public static void main(String[] args) {
         Scanner get = new Scanner(System.in);
         System.out.println("Enter the number: ");

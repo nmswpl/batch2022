@@ -1,4 +1,6 @@
 public class BiggestAmongThree {
+
+    //Finding the biggest number among three
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 12;

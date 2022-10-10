@@ -3,6 +3,7 @@ package exercise2;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Finding index position of a given number in the array
 public class IndexPosition {
 
     public static void main(String[] args) {

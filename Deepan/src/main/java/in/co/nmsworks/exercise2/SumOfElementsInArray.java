@@ -1,5 +1,6 @@
 package exercise2;
 
+//Calculating sum of elements in the array
 public class SumOfElementsInArray {
 
     public static void main(String[] args) {

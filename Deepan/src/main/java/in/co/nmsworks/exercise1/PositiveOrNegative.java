@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Finding the given is positive or not
 public class PositiveOrNegative {
 
     public static void main(String[] args) {

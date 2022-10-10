@@ -4,6 +4,7 @@ import jdk.jshell.execution.JdiDefaultExecutionControl;
 
 public class CountVCDS {
 
+    //Counting the number of Vowels,Consonants,Digits,Spaces etc..
     public static void main(String[] args) {
         String string = "This website is aw3som3.";
         String str = string.toLowerCase();

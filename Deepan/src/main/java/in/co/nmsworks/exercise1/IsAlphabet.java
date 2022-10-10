@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Checking the given input is alphabet or not
 public class IsAlphabet {
     public static void main(String[] args) {
         Scanner get = new Scanner(System.in);

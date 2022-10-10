@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Finding odd or even
 public class OddorEven {
     public static void main(String[] args) {
 

@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//finding the base and power
 public class PowerBase {
 
     public static void main(String[] args) {

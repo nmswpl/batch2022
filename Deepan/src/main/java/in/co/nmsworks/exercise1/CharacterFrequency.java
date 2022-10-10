@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class CharacterFrequency {
 
+    //Finding frequency of particular character in the string
     public static void main(String[] args) {
         Scanner get = new Scanner(System.in);
         System.out.println("Enter the character: ");

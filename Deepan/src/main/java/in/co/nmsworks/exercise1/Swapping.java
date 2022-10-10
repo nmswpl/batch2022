@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Swapping two numbers
 public class Swapping {
     public static void main(String[] args) {
         Scanner get =new Scanner(System.in);

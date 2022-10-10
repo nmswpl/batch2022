@@ -2,6 +2,7 @@ package exercise2;
 
 import java.util.Scanner;
 
+//finding the count of given number in the array
 public class NumberCount {
 
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
 import java.util.*;
+
+//Finding prime number
     public class Prime {
 
         public static void check(int num)

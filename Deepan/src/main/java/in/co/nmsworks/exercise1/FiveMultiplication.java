@@ -1,5 +1,6 @@
 public class FiveMultiplication {
 
+    //Multiplication table of 5
     public static void main(String[] args) {
         int num =5;
 

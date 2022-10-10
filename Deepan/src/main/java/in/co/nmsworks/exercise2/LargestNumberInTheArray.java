@@ -1,5 +1,6 @@
 package exercise2;
 
+//Finding largest number in the array
 public class LargestNumberInTheArray {
 
     public static void main(String[] args) {

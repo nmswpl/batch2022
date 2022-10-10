@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Checking the given alphabet is vowel or not
 public class VowelChecker {
 
 

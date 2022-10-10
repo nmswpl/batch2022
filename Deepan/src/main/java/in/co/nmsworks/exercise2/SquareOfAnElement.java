@@ -1,5 +1,6 @@
 package exercise2;
 
+//Square of a given number
 public class SquareOfAnElement {
 
     public static void main(String[] args) {

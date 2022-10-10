@@ -1,5 +1,6 @@
 package exercise2;
 
+//Multiplying two arrays
 public class ArrayMultiplication {
     public static void main(String[] args) {
         int[] arr1 = {2,8,5};

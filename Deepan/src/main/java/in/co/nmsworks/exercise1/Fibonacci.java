@@ -1,5 +1,6 @@
 public class Fibonacci {
 
+    //Fibonacci series
     public static void main(String[] args) {
         int num1=0;
         int num2=1;

@@ -1,5 +1,7 @@
 package exercise2;
 
+//Finding biggest of three numbers
+
 import java.util.Scanner;
 
 public class BiggestOfThreeNumbers {

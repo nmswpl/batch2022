@@ -2,6 +2,7 @@ package exercise2;
 
 import java.util.Scanner;
 
+//Factorial using Recursion
 public class FactorialRecursion {
         public static int factorial(int num)
         {

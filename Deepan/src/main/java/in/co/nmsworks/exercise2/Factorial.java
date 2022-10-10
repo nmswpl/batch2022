@@ -1,5 +1,6 @@
 package exercise2;
 
+//Factorial program
 import java.util.Scanner;
 
 public class Factorial {

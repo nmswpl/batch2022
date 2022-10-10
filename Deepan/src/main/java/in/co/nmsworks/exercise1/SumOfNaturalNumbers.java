@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Sum of Natural numbers
 public class SumOfNaturalNumbers {
 
     public static void main(String[] args) {

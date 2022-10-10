@@ -1,5 +1,7 @@
 package exercise2;
 
+//Reverse the given string array
+
 import java.util.Arrays;
 
 public class ReverseStringArray {

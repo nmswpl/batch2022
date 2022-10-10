@@ -1,5 +1,6 @@
 package exercise2;
 
+//Finding even number count in the given array
 public class EvenNumbersCount {
 
     public static void main(String[] args) {

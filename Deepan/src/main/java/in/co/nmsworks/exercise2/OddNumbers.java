@@ -1,5 +1,6 @@
 package exercise2;
 
+//Findig odd numbers in the array
 public class OddNumbers {
 
     public static void main(String[] args) {

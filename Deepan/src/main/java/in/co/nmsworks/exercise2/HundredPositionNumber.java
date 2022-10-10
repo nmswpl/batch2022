@@ -1,5 +1,6 @@
 package exercise2;
 
+//Finding the 100th position digit in the given number
 import java.util.Scanner;
 
 public class HundredPositionNumber {

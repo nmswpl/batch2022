@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ASCII {
 
+    //Printing ASCII value of given character
     public static void main(String[] args) {
         Scanner get = new Scanner(System.in);
 

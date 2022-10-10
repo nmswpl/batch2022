@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Finding Quotient and remainder
 public class QuotientRemainder {
     public static void main(String[] args) {
         Scanner get = new Scanner(System.in);

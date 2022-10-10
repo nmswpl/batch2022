@@ -4,6 +4,7 @@ package exercise2;
 import javax.swing.plaf.IconUIResource;
 import java.util.Scanner;
 
+//Checking prime number
 public class PrimeNumberChecker {
 
     public static void check(int num)

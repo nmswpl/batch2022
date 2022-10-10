@@ -1,5 +1,6 @@
 package exercise2;
 
+//Multiplication table of 17
 public class MulTable {
 
     public static void main(String[] args) {

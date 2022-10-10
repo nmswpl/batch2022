@@ -1,5 +1,6 @@
 package exercise2;
 
+//Grade calculator
 import java.util.Scanner;
 
 public class GradeChecker {

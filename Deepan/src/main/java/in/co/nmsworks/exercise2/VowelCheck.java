@@ -1,5 +1,6 @@
 package exercise2;
 
+//Checking vowel
 import java.util.Scanner;
 
 public class VowelCheck {
