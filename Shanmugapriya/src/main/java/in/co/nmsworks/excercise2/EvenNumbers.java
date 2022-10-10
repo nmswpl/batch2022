@@ -1,5 +1,5 @@
 package in.co.nmsworks.excercise2;
-
+//Even numbers between 600 and 700
 public class EvenNumbers
 {
     public static void main(String[] args)

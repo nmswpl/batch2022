@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//occurence of character
 public class OccurenceOfX
 {
     public static void main(String[] args) {

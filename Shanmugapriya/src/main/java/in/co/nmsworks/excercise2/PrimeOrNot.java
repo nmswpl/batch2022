@@ -2,6 +2,7 @@ package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
 
+//Prime number or not
 public class PrimeOrNot
 {
     public static void main(String[] args) {

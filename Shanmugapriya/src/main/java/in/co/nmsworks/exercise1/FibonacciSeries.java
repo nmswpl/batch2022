@@ -1,5 +1,5 @@
-package in.co.nmsworks.exercise;
-
+package in.co.nmsworks.exercise1;
+//Fiboacci series
 public class FibonacciSeries
 {
     public static void main(String[] args)

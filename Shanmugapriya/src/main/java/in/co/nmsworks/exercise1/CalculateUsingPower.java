@@ -1,7 +1,7 @@
-package in.co.nmsworks.exercise;
+package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//calculate power using powerof()
 public class CalculateUsingPower
 {
     public static void main(String[] args)

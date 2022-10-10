@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//given character is vowel or consonant
 public class VowelOrConsonant
 {
     public static void main(String[] args) {

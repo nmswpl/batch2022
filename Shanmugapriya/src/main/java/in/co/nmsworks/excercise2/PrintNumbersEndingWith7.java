@@ -1,5 +1,5 @@
 package in.co.nmsworks.excercise2;
-
+//Print numbers ending with 7
 public class PrintNumbersEndingWith7
 {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 package in.co.nmsworks.excercise2;
-
+//Print odd elements in an array
 public class PrintOddElementsInArray
 {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
-package in.co.nmsworks.training.program.exercise;
-
+package in.co.nmsworks.exercise1;
+//multiply two numbers
 public class Multiply
 {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//Biggest of 3 numbers
 public class Biggestof3
 {
     public static void main(String[] args) {

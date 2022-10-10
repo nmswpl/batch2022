@@ -1,7 +1,7 @@
-package in.co.nmsworks.training.program.exercise;
+package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//su of numbers
 public class SumOfNumbers
 {
     public static void main(String[] args) {

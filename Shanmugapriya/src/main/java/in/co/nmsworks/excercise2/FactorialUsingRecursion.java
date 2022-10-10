@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//Factorial using recursion
 public class FactorialUsingRecursion
 {
     public static int Factorial(int n)

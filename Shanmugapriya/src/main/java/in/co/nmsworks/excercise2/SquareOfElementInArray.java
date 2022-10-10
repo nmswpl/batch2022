@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Arrays;
-
+//square of element
 public class SquareOfElementInArray
 {
     public static void main(String[] args) {

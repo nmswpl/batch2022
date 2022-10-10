@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//Position of element
 public class PositionOfElement
 {
     public static void main(String[] args) {

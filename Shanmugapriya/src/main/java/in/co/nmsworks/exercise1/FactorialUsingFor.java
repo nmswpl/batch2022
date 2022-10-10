@@ -1,7 +1,7 @@
-package in.co.nmsworks.exercise;
+package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//Factorial using Forloop
 public class FactorialUsingFor
 {
     public static void main(String[] args)

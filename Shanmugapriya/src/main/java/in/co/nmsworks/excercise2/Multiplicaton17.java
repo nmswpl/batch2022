@@ -1,5 +1,5 @@
 package in.co.nmsworks.excercise2;
-
+//multiplication of 17
 public class Multiplicaton17
 {
     public static void main(String[] args) {

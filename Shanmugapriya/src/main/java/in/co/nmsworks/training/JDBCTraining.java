@@ -28,10 +28,10 @@ public class JDBCTraining
 //            PreparedStatement stmt5 = con.prepareStatement("insert into TodoList (sno,uname,descr,addeddate) values (5,'Indhu','cooking','2022-10-09 08:30:00')");
 //            stmt5.executeUpdate();
 
-            String[] details = {"1 ,'Abi' ,'purchase clothes' ,'2022-10-06 11:00:00'","2,'Banu','studying','2022-10-10 08:00:00'","3,'Divya','project works','2022-10-08 00:00:00'","4,'Hema','purchase crackers','2022-10-09 10:00:00'","5,'Indhu','cooking','2022-10-09 08:30:00'"};
+            String[] details = {"insert into TodoList values(1 ,'Abi' ,'purchase clothes' ,'2022-10-06 11:00:00')","insert into TodoList values(2,'Banu','studying','2022-10-10 08:00:00')","insert into TodoList values(3,'Divya','project works','2022-10-08 00:00:00')","insert into TodoList values(4,'Hema','purchase crackers','2022-10-09 10:00:00')","insert into TodoList values(5,'Indhu','cooking','2022-10-09 08:30:00')"};
             for (int i = 0; i < details.length; i++)
             {
-                PreparedStatement stmt = con.prepareStatement("insert into TodoList (sno,uname,descr,addeddate) values ("+details[i]+")" );
+                PreparedStatement stmt = con.prepareStatement(details[i]);
                 stmt.executeUpdate();
             }
         }

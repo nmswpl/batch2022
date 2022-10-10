@@ -1,7 +1,7 @@
-package in.co.nmsworks.training.program.exercise;
+package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//Ascii value of character
 public class AsciiValue
 {
     public static void main(String[] args)

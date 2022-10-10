@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Arrays;
-
+//Revrse the array
 public class ReverseArray
 {
     public static void main(String[] args) {

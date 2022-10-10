@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//Print grade for marks
 public class PrintGrade
 {
     public static void main(String[] args)

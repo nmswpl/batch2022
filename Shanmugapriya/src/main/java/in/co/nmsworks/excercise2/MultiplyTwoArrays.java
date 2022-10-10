@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Arrays;
-
+//multiply two arrays
 public class MultiplyTwoArrays
 {
     public static void main(String[] args)

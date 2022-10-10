@@ -1,7 +1,7 @@
-package in.co.nmsworks.exercise;
+package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//factors of positive integer
 public class FactorsOfPositiveInteger
 {
     public static void main(String[] args) {

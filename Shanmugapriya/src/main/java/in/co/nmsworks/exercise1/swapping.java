@@ -1,5 +1,5 @@
-package in.co.nmsworks.training.program.exercise;
-
+package in.co.nmsworks.exercise1;
+//swapping of integers
 public class swapping
 {
     public static void main(String[] args) {

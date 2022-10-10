@@ -1,7 +1,7 @@
 package in.co.nmsworks.excercise2;
 
 import java.util.Scanner;
-
+//Palindrome or not
 public class PalindromeOrNot
 {
     public static void main(String[] args) {
@@ -15,7 +15,6 @@ public class PalindromeOrNot
             ch = str.charAt(i) + ch;
             System.out.println(ch);
         }
-        System.out.println("outside loop"+ch);
         if(str.equals(ch))
         {
             System.out.println(ch);

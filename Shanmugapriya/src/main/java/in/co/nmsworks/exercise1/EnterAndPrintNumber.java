@@ -1,7 +1,7 @@
-package in.co.nmsworks.training.program.exercise;
+package in.co.nmsworks.exercise1;
 
 import java.util.Scanner;
-
+//Enter and print prime number
 public class EnterAndPrintNumber
 {
     public static void main(String[] args) {

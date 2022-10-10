@@ -1,9 +1,9 @@
-package in.co.nmsworks.training.program.exercise;
+package in.co.nmsworks.exercise1;
 
 
 import java.util.Scanner;
 
-
+// vowel or consonant
 public class VowelOrConsonant
 {
     public static void main(String[] args) {

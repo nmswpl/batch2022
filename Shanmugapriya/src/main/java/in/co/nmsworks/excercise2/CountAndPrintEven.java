@@ -1,5 +1,5 @@
 package in.co.nmsworks.excercise2;
-
+//Even number count and Print
 public class CountAndPrintEven
 {
     public static void main(String[] args) {

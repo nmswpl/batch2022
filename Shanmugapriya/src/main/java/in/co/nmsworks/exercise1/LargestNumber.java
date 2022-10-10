@@ -1,5 +1,5 @@
-package in.co.nmsworks.exercise;
-
+package in.co.nmsworks.exercise1;
+//Largest number in an array
 public class LargestNumber {
     public static void main(String[] args) {
 
