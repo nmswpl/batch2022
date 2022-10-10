@@ -3,6 +3,7 @@ import  java.util.Scanner;
 public class AddTwoIntegers {
     public static void main(String[] args) {
         int addingInput1,addingInput2;
+        //Add Two Number
         Scanner inputObject=new Scanner(System.in);
         System.out.println("Enter two numbers");
         addingInput1=inputObject.nextInt();
