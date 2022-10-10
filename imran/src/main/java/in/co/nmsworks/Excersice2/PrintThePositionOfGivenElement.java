@@ -10,24 +10,22 @@ public class PrintThePositionOfGivenElement {
         System.out.print("Enter search Element : ");
         int searchElement = inp.nextInt();
 
-        int count = 0;
+        int position = 0;
 
         for (int i = 0 ; i < arr.length;i++)
         {
             if(arr[i] == searchElement)
             {
-                count = i;
+                position = i;
+                break;
 
+            }
+            else
+            {
+                position = -1;
             }
 
         }
-        if(count == 0)
-        {
-            System.out.println(searchElement + "is not present its position = -1");
-        }
-        else
-        {
-            System.out.println(searchElement +"'s position = "+count);
-        }
+        System.out.println("Position  : "+position);
     }
 }
