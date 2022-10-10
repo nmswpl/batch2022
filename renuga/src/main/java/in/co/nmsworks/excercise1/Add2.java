@@ -1,5 +1,6 @@
 package in.co.nmsworks.excercise1;
 
+/*2. Write a Program to Add Two Integers*/
 import java.util.Scanner;
 
 public class Add2 {
