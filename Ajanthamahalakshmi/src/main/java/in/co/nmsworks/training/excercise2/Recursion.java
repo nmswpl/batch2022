@@ -5,13 +5,19 @@ package in.co.nmsworks.training.excercise2;
 public class Recursion {
     public static void main(String[] args)
     {
-        int num = 5;
-        int fact = 1;
-        for(int i=1;i < num+1;i++)
-        {
-            fact = fact *i;
+        int num =5;
 
-        }
-        System.out.println("factorial is"+fact);
+        System.out.println("result is " + recursionFact(num));
     }
+    public static int recursionFact(int num)
+    {
+        if(num == 0)
+            return 1;
+        else
+            return num * recursionFact(num - 1);
+    }
+
 }
+
+
+
