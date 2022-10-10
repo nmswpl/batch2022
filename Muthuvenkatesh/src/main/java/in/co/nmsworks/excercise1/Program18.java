@@ -1,4 +1,4 @@
-// 18. Count Number of Digits in an Integer using while loop
+package in.co.nmsworks.excercise1;// 18. Count Number of Digits in an Integer using while loop
 import java.util.Scanner;
 
 public class Program18 {
@@ -8,10 +8,8 @@ public class Program18 {
         int number = input.nextInt();
         int count =0;
         while (number>0){
-            int temp = number%10;
             count++;
             number = number/10;
-
         }
         System.out.println("Number of digits: "+count);
     }

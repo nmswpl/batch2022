@@ -1,4 +1,4 @@
-// 19. Calculate the power of a number using a for loop. (E.g : 2 power 3 is 8 [2 x 2 x 2])
+package in.co.nmsworks.excercise1;// 19. Calculate the power of a number using a for loop. (E.g : 2 power 3 is 8 [2 x 2 x 2])
 import java.util.Scanner;
 
 public class Program19 {
@@ -8,11 +8,11 @@ public class Program19 {
         int base = input.nextInt();
         System.out.print("Enter Power : ");
         int power = input.nextInt();
-        int temp=base;
-        for(int i=1;i<power;i++){
-            base = temp * base;
+        int temp= 1;
+        for(int i= 0; i<power;i++){
+            temp = temp * base;
         }
-        System.out.println("answer = "+base);
+        System.out.println("answer = "+temp);
 
     }
 }
