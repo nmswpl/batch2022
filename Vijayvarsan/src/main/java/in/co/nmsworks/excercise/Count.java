@@ -17,13 +17,15 @@ public class Count {
             {
                 consonants++;
             }
-            else if(c>=0||c<=9)
+            else if(c>='0' && c<='9')
             {
                 digits++;
 
             }
             else if(str.charAt(i)==' ')
                 space++;
+
+
         }
 
 

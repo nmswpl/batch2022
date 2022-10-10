@@ -11,7 +11,6 @@ public class PrimeNumber {
             if ( find%i==0 )
             {
                 flag++;
-                System.out.println();
                 break;
             }
         }
