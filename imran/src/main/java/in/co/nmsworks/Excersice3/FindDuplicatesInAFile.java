@@ -2,31 +2,32 @@ package in.co.nmsworks.Excersice3;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static in.co.nmsworks.Excersice3.ReadFile.readfile;
 
 public class FindDuplicatesInAFile
 {
-    public static List<Integer> findDuplicates(List<Integer> originallist)
+    public static Set<Integer> findDuplicates(List<Integer> originallist)
     {
-        List<Integer> duplicateOnly = new ArrayList<>();
-        List<Integer> withoutDuplicate = new ArrayList<>();
+        List<Integer> withoutduplicates = new ArrayList<>();
+        Set<Integer> duplicates = new HashSet<>();
 
 
         for (int i : originallist)
         {
-            if(withoutDuplicate.contains(i))
+            if(withoutduplicates.contains(i))
             {
-                duplicateOnly.add(i);
+                duplicates.add(i);
             }
             else
             {
-               withoutDuplicate.add(i);
+                withoutduplicates.add(i);
             }
         }
-
-        return duplicateOnly;
+        return duplicates;
     }
 
 }

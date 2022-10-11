@@ -6,7 +6,7 @@ import static java.util.Map.*;
 
 public class NumberOfOccurance
 {
-    public static void numberOfOccurance(List<Integer> orglist,List<Integer> duplist) {
+    public static void numberOfOccurance(List<Integer> orglist) {
         Map<Integer, Integer> mymap = new HashMap<>();
         List<Integer> one = new ArrayList<>();
         List<Integer> two = new ArrayList<>();
@@ -58,6 +58,8 @@ public class NumberOfOccurance
             }
 
         }
+
+        int counting =  two.size() + three.size() + four.size() + five.size();
         System.out.println("\n");
         System.out.println("One time  = "+ansmap.get(1));
         System.out.println("\n");

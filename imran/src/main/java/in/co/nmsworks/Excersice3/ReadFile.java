@@ -8,9 +8,9 @@ public class ReadFile
 {
     public static List<Integer> readfile(String str)
     {
-        try
+        try( BufferedReader br = new BufferedReader(new FileReader(str)))
         {
-            BufferedReader br = new BufferedReader(new FileReader(str));
+
             List<Integer> mylist = new ArrayList<>();
             String ans;
             int value;
@@ -19,7 +19,7 @@ public class ReadFile
                 value = Integer.parseInt(ans);
                 mylist.add(value);
             }
-            br.close();
+
 //            System.out.println(mylist);
             
 //            Set myset = new HashSet();
