@@ -17,7 +17,6 @@ public class ReadFile {
         while ((line = buffer.readLine())!=null){
             list.add(Integer.parseInt(line));
         }
-        //System.out.println(list);
         read.close();
         return list;
     }
