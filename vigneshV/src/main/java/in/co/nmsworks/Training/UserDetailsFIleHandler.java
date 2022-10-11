@@ -5,8 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class UserDetailsFIleHandler
 {
@@ -26,22 +25,22 @@ public class UserDetailsFIleHandler
         {
             while (s.next())
             {
-                List<String> row = new ArrayList<>();
                     if(s.getString(5).equals("Male"))
                     {
+                        String userName = s.getString(2);
+                        String firstName = s.getString(5);
+                        String lastName = s.getString(4);
 
-                        row.add(s.getString(2));
-                        row.add(s.getString(3));
-                        row.add(s.getString(4));
 
-                        maleFileWriter.write(row +"\n");
+
+                        maleFileWriter.write( userName+" "+firstName+" "+" "+lastName+"\n");
                     }
                     else
                     {
-                        row.add(s.getString(2));
-                        row.add(s.getString(3));
-                        row.add(s.getString(4));
-                        femaleFileWriter.write(row+"\n");
+                        String userName = s.getString(2);
+                        String firstName = s.getString(5);
+                        String lastName = s.getString(4);
+                        femaleFileWriter.write( userName+" "+firstName+" "+" "+lastName+"\n");
                     }
                 }
             }
