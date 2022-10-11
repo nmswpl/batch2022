@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise4;
-
+// Read the table and write male and female list in separate files
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
