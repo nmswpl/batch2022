@@ -11,15 +11,21 @@ public class ReadTheFile
         public  static List<Integer> readTheFileUsingBuffer(String filePath) throws Exception
         {
             List<Integer> arr=new ArrayList<>();
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
-            String txt;
-            while((txt = reader.readLine())!=null)
+            try( BufferedReader reader = new BufferedReader(new FileReader(filePath)))
             {
-                arr.add(Integer.parseInt(txt));
+
+                String txt;
+                while ((txt = reader.readLine()) != null)
+                {
+                    arr.add(Integer.parseInt(txt));
+
+                }
 
             }
-            reader.close();
-
+            catch(Exception e)
+            {
+                System.out.println("File is not found");
+            }
             return arr;
         }
     }

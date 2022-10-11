@@ -1,23 +1,31 @@
 package in.co.nmsworks.exercise3;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class FindDuplicate
 {
-  public static List<Integer> toFindDuplicate(List<Integer> a)
+  public static List<Integer> toFindDuplicate(List<Integer> list)
   {
-     List<Integer> dupli=new ArrayList<>();
-      for (int i = 0; i < a.toArray().length; i++)
+     Set<Integer> duplicate=new HashSet<>();
+
+      for(int i:list)
       {
-          for (int j = i + 1; j < a.toArray().length; j++)
+          int count=0;
+          if (duplicate.contains(i))
           {
-              if (a.get(i) .equals( a.get(j)))
-              {
-                  dupli.add(a.get(j));
-              }
+              count++;
+              System.out.println("Duplicate:" + i+" ");
+
+
+          } else
+          {
+              duplicate.add(i);
           }
       }
-      return dupli;
+
+      return list;
   }
 }
