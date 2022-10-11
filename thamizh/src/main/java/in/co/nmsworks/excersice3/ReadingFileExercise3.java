@@ -6,8 +6,7 @@ import java.util.List;
 
 public class ReadingFileExercise3 {
 
-
-    public  List<Integer> readingFiles(String filedes) throws IOException {
+    public static List<Integer> readingFiles(String filedes) throws IOException {
 
         List<Integer> val=new ArrayList<>();
 
