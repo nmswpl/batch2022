@@ -4,6 +4,7 @@ public class FilePath {
     public static void main(String[] args) throws Exception{
         ReadFile.fileRead("/home/nmsadmin/Downloads/Numbers.txt");
         //CountOfTotalDuplicateNumbers.findDuplicates();
-        CountOfOccurance.countOccurance();
+        //CountOfOccurrence.countOccurrence();
+        OccurenceToNumber.occurenceToNumber();
     }
 }

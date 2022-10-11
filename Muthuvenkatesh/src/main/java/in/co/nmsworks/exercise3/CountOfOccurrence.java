@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CountOfOccurance {
-    public static void countOccurance() throws Exception{
+public class CountOfOccurrence {
+    public static Map<Integer,Integer> countOccurrence() throws Exception{
         List<Integer> list = ReadFile.fileRead("/home/nmsadmin/Downloads/Numbers.txt");
         Map<Integer,Integer> map = new HashMap<>();
         for(int num : list){
@@ -19,6 +19,6 @@ public class CountOfOccurance {
             }
         }
         System.out.println(map);
-
+        return map;
     }
 }
