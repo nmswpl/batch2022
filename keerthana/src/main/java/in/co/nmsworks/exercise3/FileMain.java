@@ -15,8 +15,12 @@ public class FileMain
 
 
         NoOfOccurenceOfNum count1=new NoOfOccurenceOfNum();
-
+        Map<Integer,Integer> mapSet=count1.NoOfOccurence(list);
         System.out.println(count1.NoOfOccurence(list));
+
+        OccurenceOfNum num=new OccurenceOfNum();
+        Map<Integer,List<Integer>> num2=num.occurenceOfNumbers(mapSet);
+        System.out.println(num2);
 
     }
 

@@ -9,7 +9,6 @@ public class NoOfOccurenceOfNum
     public static Map<Integer,Integer> NoOfOccurence(List<Integer> list)
     {
         Map<Integer,Integer> mapObject=new HashMap<>();
-        // 2,3,1,2,3
         for(int i:list)
         {
             if(mapObject.containsKey(i))
@@ -25,3 +24,27 @@ public class NoOfOccurenceOfNum
         return mapObject;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
