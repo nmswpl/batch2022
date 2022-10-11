@@ -9,7 +9,7 @@ import java.util.Map;
 // 1 - [2, 3]
 // 3 - [1]
 
-public class FindDuplicateOccurrence {
+public class FindOccurrence {
     public static Map<Integer, List<Integer>> findFrequencyToNumbersList(Map<Integer, Integer> numToFreq) {
         Map<Integer, List<Integer>> freqToNumbers = new HashMap<>();
 
