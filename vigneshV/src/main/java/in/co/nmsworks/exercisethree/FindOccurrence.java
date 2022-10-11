@@ -11,19 +11,15 @@ public class FindOccurrence {
         for(int i :numbers)
             map.put(i,map.getOrDefault(i,0)+1);
         Map<Integer,List<Integer>> noOfOccurance = new HashMap<>();
-        Set<Integer> valuesSet = new HashSet<>(map.values());
-        for(int i:valuesSet)
+        for(Map.Entry<Integer, Integer> j:map.entrySet())
         {
-            List<Integer> list = new ArrayList<>();
-            for(Map.Entry<Integer, Integer> j:map.entrySet())
-            {
-                if(j.getValue()==i) {
-                    list.add(j.getKey());
-                }
-            }
-
-            noOfOccurance.put(i,list);
+            if(!noOfOccurance.containsKey(j.getValue()))
+                noOfOccurance.put(j.getValue(),new ArrayList<>());
+            noOfOccurance.get(j.getValue()).add(j.getKey());
         }
-        System.out.println("\n"+noOfOccurance);
+
+            System.out.println("\n"+noOfOccurance);
+        }
+
     }
-}
+
