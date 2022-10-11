@@ -12,6 +12,7 @@ public class FindDuplicatesMain
         List<Integer> readedFileList = readfile("/home/nmsadmin/Downloads/Numbers.txt");
         List<Integer> duplicateValueList = findDuplicates(readedFileList);
         System.out.println("Original List : "+readedFileList);
+        System.out.println("\n");
         System.out.println("DuplicateList : "+duplicateValueList);
         numberOfOccurance(readedFileList,duplicateValueList);
 

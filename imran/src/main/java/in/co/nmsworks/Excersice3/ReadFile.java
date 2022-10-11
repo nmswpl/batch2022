@@ -11,7 +11,6 @@ public class ReadFile
         try
         {
             BufferedReader br = new BufferedReader(new FileReader(str));
-            FileWriter writer = new FileWriter("/home/nmsadmin/Downloads/myfile");
             List<Integer> mylist = new ArrayList<>();
             String ans;
             int value;
