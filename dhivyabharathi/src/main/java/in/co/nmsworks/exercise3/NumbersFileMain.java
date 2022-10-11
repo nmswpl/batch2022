@@ -9,6 +9,7 @@ public class NumbersFileMain {
    List<Integer> list = nf.readData("/home/nmsadmin/git/batch2022/dhivyabharathi/src/main/java/in/co/nmsworks/exercise3/Numbers.txt");
 
     FindDuplicate fd = new FindDuplicate();
+
     fd.duplicate(list);
     }
 }

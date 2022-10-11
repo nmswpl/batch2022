@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class FindDuplicate {
     Set<Integer> countset = new HashSet<>();
-    int count;
+    int count=0;
     public void duplicate(List<Integer> rclist) {
         
         for (int i = 0; i < rclist.size(); i++)
