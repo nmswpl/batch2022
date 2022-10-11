@@ -3,8 +3,9 @@ package in.co.nmsworks.Excercise4;
 import java.io.*;
 import java.sql.*;
 
-public class FileReadings {
-    public static void readingFile() {
+
+public class ReadingFromDataBaseAndWriteToTextFile {
+    public static void readFileAndWrite() {
         try (FileWriter fileWriterMale = new FileWriter("/home/nmsadmin/Desktop/male.txt");
              FileWriter fileWriterFemale = new FileWriter("/home/nmsadmin/Desktop/female.txt");
              Connection con = DriverManager.getConnection("jdbc:mysql://localhost/training");
@@ -46,6 +47,6 @@ public class FileReadings {
 
     public static void main(String[] args)
     {
-        readingFile();
+        readFileAndWrite();
     }
 }
