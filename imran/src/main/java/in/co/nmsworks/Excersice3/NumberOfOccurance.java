@@ -38,7 +38,6 @@ public class NumberOfOccurance
             listforOccurance1.add(entry.getKey());
 
         }
-        System.out.println();
 //        System.out.println(ansmap.get(1));
 //        Set<Integer> myset = new HashSet<>(mymap.values());
 //        for (int i : myset)
