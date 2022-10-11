@@ -10,13 +10,18 @@ public class ReadingFileExercise3 {
     public  List<Integer> readingFiles(String filedes) throws IOException {
 
         List<Integer> val=new ArrayList<>();
-        try {
+
+        File file = new File(filedes);
+
+        try (
+
+              FileReader fr = new FileReader(filedes);
+              BufferedReader br = new BufferedReader(fr))
+
+        {
 
 
-            File file = new File(filedes);
 
-            FileReader fr = new FileReader(filedes);
-            BufferedReader br = new BufferedReader(fr);
 
             String s;
             while ((s=br.readLine()) != null)
@@ -29,10 +34,7 @@ public class ReadingFileExercise3 {
 
             //System.out.println(val.size());
         }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+
         return val;
     }
 
