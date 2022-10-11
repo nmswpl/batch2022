@@ -5,7 +5,6 @@ import com.mysql.cj.protocol.a.LocalDateValueEncoder;
 import java.sql.*;
 import java.time.LocalDate;
 
-import static com.sun.corba.se.impl.util.Utility.printStackTrace;
 
 public class JDBCExcersise
 {
