@@ -1,5 +1,5 @@
 package in.co.nmsworks.execise1;
-
+//5. Write a program to check if a given Character is a Vowel or Consonant
 import java.util.Scanner;
 
 public class CheckVowel {
