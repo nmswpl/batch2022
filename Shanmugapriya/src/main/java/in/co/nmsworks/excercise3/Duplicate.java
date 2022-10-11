@@ -1,9 +1,6 @@
 package in.co.nmsworks.excercise3;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static in.co.nmsworks.excercise3.CountOccurence.findOccurence;
 import static in.co.nmsworks.excercise3.ReadElements.readFile;
@@ -23,8 +20,7 @@ public class Duplicate
 
         List<Integer> noduplicate = new ArrayList<>();
 
-        Map<Integer,Integer> count = findOccurence(listofinteger);
-        System.out.println("count  "+count);
+       Map<Integer,Integer> count = findOccurence(listofinteger);
 
 
         for( int  integer : listofinteger)

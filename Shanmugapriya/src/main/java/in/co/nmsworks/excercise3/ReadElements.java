@@ -9,19 +9,14 @@ public class ReadElements {
     public static List<Integer> readFile(String filepath) throws Exception {
 
             List<Integer> integer = new ArrayList<>();
-            BufferedReader br = new BufferedReader(new FileReader(filepath));
             String text;
-        try {
+
+        try( FileReader fileReader = new FileReader(filepath);
+               BufferedReader br = new BufferedReader(new FileReader(filepath))) {
             while ((text = br.readLine()) != null) {
                 integer.add(Integer.parseInt(text));
             }
-            //  System.out.println(integer);
-            br.close();
 
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
 
         }
         return integer;
