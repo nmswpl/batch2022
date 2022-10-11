@@ -20,14 +20,6 @@ public class ReadFile
                 mylist.add(value);
             }
 
-//            System.out.println(mylist);
-            
-//            Set myset = new HashSet();
-//            for ( int i : mylist)
-//            {
-//                  myset.add(i);
-//            }
-//            System.out.println(myset);
             return mylist;
         }
         catch (IOException e)
