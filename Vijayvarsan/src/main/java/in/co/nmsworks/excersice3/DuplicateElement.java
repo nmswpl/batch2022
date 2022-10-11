@@ -9,9 +9,6 @@ public class DuplicateElement {
 
     //1.Write a program to find the duplicate elements in the given file.
 
-
-
-
     public static void main(String[] args) throws Exception {
         FileCreation path=new FileCreation();
        List<Integer> list= path.fileRead("/home/nmsadmin/Downloads/Numbers.txt");
@@ -36,6 +33,6 @@ public class DuplicateElement {
 //            count=0;
         }
         System.out.println(count+"=as a number of duplicates");
-        System.out.println(dupSet);
+        //System.out.println(dupSet);
     }
 }
