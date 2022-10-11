@@ -26,14 +26,10 @@ public class OccurrenceFinder {
 
         Map<Integer,List<Integer>> occurrenceMap = new HashMap<>();
         for (int integer: integerMap.keySet()) {           // 90 = 1,80 = 2
-            if (occurrenceMap.containsKey(integerMap.get(integer))) {
-                occurrenceMap.get(integerMap.get(integer)).add(integer);
-            }
-            else {
+            if (! occurrenceMap.containsKey(integerMap.get(integer))) {
                 occurrenceMap.put(integerMap.get(integer),new ArrayList<>());
-                occurrenceMap.get(integerMap.get(integer)).add(integer);
-
             }
+            occurrenceMap.get(integerMap.get(integer)).add(integer);
         }
         System.out.println(occurrenceMap);
 //        List<Integer> oneTimeOccurrence = new ArrayList<>();
