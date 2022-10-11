@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise;
-
+//1. Write a Program to Print an Integer entered by the User.
 import java.util.Scanner;
 
 public class Userno {

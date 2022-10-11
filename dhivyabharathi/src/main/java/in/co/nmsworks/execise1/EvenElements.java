@@ -1,5 +1,5 @@
 package in.co.nmsworks.execise1;
-
+//15. Given an array of integers, Write a Program to count and print even elements
 public class EvenElements {
     public static void main(String[] args) {
         int CheckArray[] = {3,4,5,6,8,50};

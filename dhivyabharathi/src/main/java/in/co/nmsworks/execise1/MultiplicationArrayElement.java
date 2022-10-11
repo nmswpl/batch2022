@@ -1,5 +1,5 @@
 package in.co.nmsworks.execise1;
-
+//3. Write a program to multiply two arrays of same size element-by-element
 public class MultiplicationArrayElement {
     public static void main(String[] args) {
         int FirstArray[] = {3,4,5};

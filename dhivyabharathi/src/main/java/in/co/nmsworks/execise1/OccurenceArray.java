@@ -1,5 +1,6 @@
 package in.co.nmsworks.execise1;
-
+//18. Given an array of integers and int x, Write a Program to print no of occurance of x in
+//the array
 import java.util.Scanner;
 
 public class OccurenceArray {

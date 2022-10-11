@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise;
-
+//4. Write a program to Find ASCII value of a character
 
 import java.util.Scanner;
 

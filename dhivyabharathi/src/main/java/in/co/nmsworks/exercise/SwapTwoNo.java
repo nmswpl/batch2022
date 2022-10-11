@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise;
-
+//6. Write a program to Swap two numbers using temporary variable
 import java.util.Scanner;
 
 public class SwapTwoNo {

@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise;
-
+//3. Write a program to Multiply Two Floating-Point Numbers
 public class MultiplyFloat {
     public static void main(String[] args) {
         float n1 = 3.5f;

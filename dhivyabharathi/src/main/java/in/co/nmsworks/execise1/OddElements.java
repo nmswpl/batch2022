@@ -1,5 +1,5 @@
 package in.co.nmsworks.execise1;
-
+//12. Given an array of integers, Write a Program to print number of odd elements.
 public class OddElements {
     public static void main(String[] args) {
         int CheckArray[] = {3,4,5,6};

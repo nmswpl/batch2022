@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise;
-
+//5. Write a program to Compute Quotient and Remainder
 import java.util.Scanner;
 
 public class QuotientAndReminder {

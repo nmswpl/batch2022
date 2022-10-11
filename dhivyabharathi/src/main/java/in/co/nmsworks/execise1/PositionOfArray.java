@@ -1,33 +1,30 @@
 package in.co.nmsworks.execise1;
-
+//4. Write a program to print the position of given element in an array. If not present, print -1
 import java.util.Scanner;
 
 public class PositionOfArray
 {
     public static void main(String[] args)
     {
-        int GivenArray [] = {4,5,6,2};
-        int count =0;
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter Check No");
-        int CheckNo = in.nextInt();
-        for (int i = 0; i < GivenArray.length; i++) {
-            if (CheckNo == GivenArray[i]) {
-                System.out.println(i);
-                break;
-            }
-            else
+        Scanner get = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num = get.nextInt();
+
+        int index =0 ;
+        int GivenArray[] = {3,4,5,6,7,8};
+
+        for (int i=0 ; i < GivenArray.length ; i++){
+
+            if(num == GivenArray[i])
             {
-                count++;
+                index = i;
             }
-
         }
-        if(count != 0)
-        {
+
+        if (index > 0)
+            System.out.println("Index of "+num+ " is "+index);
+        else
             System.out.println(-1);
-        }
-
-
 
     }
 }

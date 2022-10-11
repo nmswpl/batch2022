@@ -1,7 +1,7 @@
 package in.co.nmsworks.execise1;
 
 import java.util.Scanner;
-
+//20. Given an integer x, Write a Program to check whether x is Prime or not ?
 public class PrimeOrNot {
     public static void main(String[] args) {
         int count = 0;

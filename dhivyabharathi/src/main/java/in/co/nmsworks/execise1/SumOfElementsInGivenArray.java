@@ -1,5 +1,6 @@
 package in.co.nmsworks.execise1;
-
+//13. Given an array of integers, Write a Program to find the sum of the elements of the
+//array
 public class SumOfElementsInGivenArray {
     public static void main(String[] args) {
         int GivenArray[] = {1,2,3,4};

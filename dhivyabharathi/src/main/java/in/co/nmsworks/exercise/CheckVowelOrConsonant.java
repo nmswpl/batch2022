@@ -1,7 +1,8 @@
 package in.co.nmsworks.exercise;
 
 import java.util.Scanner;
-
+//8. Write a program to Check whether an alphabet is vowel or consonant using if..else
+//statemen another method
 public class CheckVowelOrConsonant {
 
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package in.co.nmsworks.execise1;
 
 import java.util.Scanner;
-
+//19. Given a String, Write a program to find if the string is palindrome or Not.
 public class PalindromOrNot {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

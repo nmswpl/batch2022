@@ -1,5 +1,11 @@
 package in.co.nmsworks.execise1;
-
+//2. Write a program to print the Grade for given Mark.
+//Mark Slab : 91-100 = S;
+//81-90 = A;
+//71-80 = B;
+//61-70 = C ;
+//51-60 = D;
+//Every thing else : F
 import java.util.Scanner;
 
 public class GradeForGivenMark
