@@ -24,24 +24,35 @@ public class OccurrenceFinder {
         }
         System.out.println(integerMap);
 
-        Map<Integer,List> occurrenceMap = new HashMap<>();
-        List<Integer> oneTimeOccurrence = new ArrayList<>();
-        List<Integer> twoTimeOccurrence = new ArrayList<>();
-        List<Integer> threeTimeOccurrence = new ArrayList<>();
+        Map<Integer,List<Integer>> occurrenceMap = new HashMap<>();
+        for (int integer: integerMap.keySet()) {           // 90 = 1,80 = 2
+            if (occurrenceMap.containsKey(integerMap.get(integer))) {
+                occurrenceMap.get(integerMap.get(integer)).add(integer);
+            }
+            else {
+                occurrenceMap.put(integerMap.get(integer),new ArrayList<>());
+                occurrenceMap.get(integerMap.get(integer)).add(integer);
 
-        for (int integer: integerMap.keySet()) {
-            if (integerMap.get(integer) == 1){
-                oneTimeOccurrence.add(integer);
-            } else if (integerMap.get(integer) == 2) {
-                    twoTimeOccurrence.add(integer);
-            }else if(integerMap.get(integer) == 3) {
-                     threeTimeOccurrence.add(integer);
             }
         }
-        occurrenceMap.put(1,oneTimeOccurrence);
-        occurrenceMap.put(2,twoTimeOccurrence);
-        occurrenceMap.put(3,threeTimeOccurrence);
         System.out.println(occurrenceMap);
+//        List<Integer> oneTimeOccurrence = new ArrayList<>();
+//        List<Integer> twoTimeOccurrence = new ArrayList<>();
+//        List<Integer> threeTimeOccurrence = new ArrayList<>();
+//
+//        for (int integer: integerMap.keySet()) {
+//            if (integerMap.get(integer) == 1){
+//                oneTimeOccurrence.add(integer);
+//            } else if (integerMap.get(integer) == 2) {
+//                    twoTimeOccurrence.add(integer);
+//            }else if(integerMap.get(integer) == 3) {
+//                     threeTimeOccurrence.add(integer);
+//            }
+//        }
+//        occurrenceMap.put(1,oneTimeOccurrence);
+//        occurrenceMap.put(2,twoTimeOccurrence);
+//        occurrenceMap.put(3,threeTimeOccurrence);
+//        System.out.println(occurrenceMap);
     }
 }
 
