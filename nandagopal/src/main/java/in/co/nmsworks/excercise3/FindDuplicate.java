@@ -7,21 +7,33 @@ import java.util.Set;
 
 // find duplicate from the file
 public class FindDuplicate {
-    public static void main(String[] args) {
-        String filePath = "/home/nmsadmin/Desktop/Training/assetFiles/Numbers.txt";
-        List<Integer> fileContents = ReadContent.readFile(filePath);
-
+    public static List<Integer> findDuplicated(List<Integer> numbers) {
         Set<Integer> seen = new HashSet<>();
-        List<Integer> duplicateFileContents = new ArrayList<>();
+        List<Integer> duplicateNumbers = new ArrayList<>();
 
-        for(Integer number : fileContents) {
+        for(Integer number : numbers) {
             if(seen.contains(number)) {
-                duplicateFileContents.add(number);
+                duplicateNumbers.add(number);
                 continue;
             }
             seen.add(number);
         }
 
-        System.out.println("Duplicate contents : " + duplicateFileContents);
+        return duplicateNumbers;
+    }
+    public static void main(String[] args) {
+        String filePath = "/home/nmsadmin/Desktop/Training/assetFiles/Numbers.txt";
+        List<Integer> numbers;
+
+        try {
+            numbers = ReadContent.readFile(filePath);
+        }
+        catch (Exception e) {
+            System.out.println("File cannot be read");
+            return;
+        }
+
+        List<Integer> duplicateNumbers = findDuplicated(numbers);
+        System.out.println("Duplicate contents : " + duplicateNumbers);
     }
 }
