@@ -5,6 +5,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDetailsFIleHandler
 {
@@ -16,10 +18,6 @@ public class UserDetailsFIleHandler
 
         ResultSet s = st.executeQuery("select * from user_details");
 
-        ResultSetMetaData rsmd = s.getMetaData();
-        int columnsNumber = rsmd.getColumnCount();
-
-
         try
                 (
                 BufferedWriter maleFileWriter = new BufferedWriter(new FileWriter("/home/nmsadmin/git/batch2022/vigneshV/src/main/java/in/co/nmsworks/Training/Male.txt"));
@@ -28,20 +26,22 @@ public class UserDetailsFIleHandler
         {
             while (s.next())
             {
-                for(int i = 1 ; i <= columnsNumber; i++)
-                {
+                List<String> row = new ArrayList<>();
                     if(s.getString(5).equals("Male"))
                     {
-                        maleFileWriter.write(s.getString(i) +" ");
-                        if(i==columnsNumber)
-                            maleFileWriter.write('\n');
 
+                        row.add(s.getString(2));
+                        row.add(s.getString(3));
+                        row.add(s.getString(4));
+
+                        maleFileWriter.write(row +"\n");
                     }
                     else
                     {
-                        femaleFileWriter.write(s.getString(i)+' ');
-                        if(i==columnsNumber)
-                            femaleFileWriter.write('\n');
+                        row.add(s.getString(2));
+                        row.add(s.getString(3));
+                        row.add(s.getString(4));
+                        femaleFileWriter.write(row+"\n");
                     }
                 }
             }
@@ -49,6 +49,6 @@ public class UserDetailsFIleHandler
             con.close();
         }
     }
-}
+
 
 
