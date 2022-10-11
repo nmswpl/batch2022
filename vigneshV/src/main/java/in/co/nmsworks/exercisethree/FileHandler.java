@@ -22,6 +22,7 @@ public class FileHandler
         List<Integer> oneTime = new ArrayList<>();
         List<Integer> twoTime = new ArrayList<>();
         List<Integer> threeTimes = new ArrayList<>();
+        List<Integer> fourTimes = new ArrayList<>();
         for(int i :numbers)
             map.put(i,map.getOrDefault(i,0)+1);
         for (Map.Entry<Integer,Integer> i: map.entrySet())
@@ -32,17 +33,20 @@ public class FileHandler
                 twoTime.add(i.getKey());
             else if(i.getValue()==3)
                 threeTimes.add(i.getKey());
+            else if(i.getValue()==4)
+                fourTimes.add(i.getKey());
 
         }
         System.out.println("\nOne Time Found - "+oneTime);
         System.out.println("Two Time Found - "+twoTime);
         System.out.println("Three Time Found - "+threeTimes);
+        System.out.println("Four Time Found - "+fourTimes);
     }
 
 
     private static void searchDuplicate(List<Integer> numbers)
     {
-        ArrayList<Integer> duplicateNum = new ArrayList<>();
+        Set<Integer> duplicateNum = new HashSet<>();
         for(int i:numbers)
         {
             if(!duplicateNum.contains(i))
