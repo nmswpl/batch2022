@@ -17,7 +17,7 @@ public class Duplicate {
             if(uniqueSet.contains(item))
             {
                 duplicateCount++;
-                System.out.println(item + " is Duplicate");
+                System.out.println("duplicate is " + item );
             }
             else
             {
