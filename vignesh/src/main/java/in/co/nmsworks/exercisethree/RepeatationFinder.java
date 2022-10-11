@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class DuplicateFinder {
+public class RepeatationFinder {
 
     public static void main(String[] args) throws IOException {
 
