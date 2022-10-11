@@ -8,9 +8,14 @@ public class FindOccurrence {
     public static void occurrenceCount(List<Integer> numbers)
     {
         Map<Integer,Integer> map = new HashMap<>();
+
         for(int i :numbers)
             map.put(i,map.getOrDefault(i,0)+1);
+
+
         Map<Integer,List<Integer>> noOfOccurance = new HashMap<>();
+
+
         for(Map.Entry<Integer, Integer> j:map.entrySet())
         {
             if(!noOfOccurance.containsKey(j.getValue()))
@@ -19,7 +24,8 @@ public class FindOccurrence {
         }
 
             System.out.println("\n"+noOfOccurance);
-        }
 
     }
+
+}
 
