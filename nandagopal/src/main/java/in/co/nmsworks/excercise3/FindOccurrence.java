@@ -18,7 +18,6 @@ public class FindOccurrence {
 
             if(freqToNumbers.containsKey(freqKey)) {
                 freqToNumbers.get(freqKey).add(num);
-                freqToNumbers.replace(freqKey, freqToNumbers.get(freqKey));
             }
             else {
                 List<Integer> sameFreqNumbers = new ArrayList<>();
