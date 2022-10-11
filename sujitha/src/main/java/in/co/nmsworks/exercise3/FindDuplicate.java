@@ -6,11 +6,11 @@ public class FindDuplicate
 {
     public static void main(String[] args) throws Exception
     {
-     //FileReading fr=new FileReading();
      List<Integer> res = FileReading.readFile("/home/nmsadmin/Downloads/Numbers.txt");
 
      FindDuplicate fd=new FindDuplicate();
      fd.findDuplicateNumbers(res);
+
     }
    public void findDuplicateNumbers(List<Integer> res)
    {
@@ -31,6 +31,8 @@ public class FindDuplicate
        System.out.println("number of duplicate numbers: "+(res.size()-numbers.size()));
 
    }
+
+
 
 
 }
