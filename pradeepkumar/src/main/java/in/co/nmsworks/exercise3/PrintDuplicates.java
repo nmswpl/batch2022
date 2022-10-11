@@ -10,9 +10,6 @@ public class PrintDuplicates {
         System.out.println(list);
        findDuplicates(list);
        countTheNumbers(list);
-
-
-
     }
 
     public static void findDuplicates(List<Integer>list)
@@ -34,7 +31,7 @@ public class PrintDuplicates {
         System.out.println(count);
     }
 
-    public static Map<Integer,Integer> countTheNumbers(List<Integer>list)
+    public static void countTheNumbers(List<Integer>list)
     {
         Map<Integer,Integer> map =new HashMap<>();
         for (Integer temp:list) {
@@ -48,11 +45,23 @@ public class PrintDuplicates {
             else {
                 map.put(temp,1);
             }
+        }
+
+        Map<Integer, List<Integer>> listMap = new HashMap<>();
+        Set<Integer> keySet = map.keySet();
+        for (Integer key: map.keySet()) {
+
+            if (listMap.containsKey(map.get(key))) {
+                listMap.get(map.get(key)).add(key);
+            } else {
+                List<Integer> mapList = new ArrayList<>();
+                mapList.add(key);
+                listMap.put(map.get(key), mapList);
+            }
 
         }
-        System.out.println(map);
-
-        return map;
+        System.out.println(listMap);
     }
+
 
 }
