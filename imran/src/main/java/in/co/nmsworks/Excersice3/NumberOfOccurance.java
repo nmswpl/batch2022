@@ -32,7 +32,7 @@ public class NumberOfOccurance
             if(entry.getValue() == 1)
             {
                 one.add(entry.getKey());
-                ansmap.put(entry.getValue(), one);
+                ansmap.put(entry.getValue(), one );
             }
             else if (entry.getValue() == 2)
             {
@@ -58,8 +58,8 @@ public class NumberOfOccurance
             }
 
         }
-
-        int counting =  two.size() + three.size() + four.size() + five.size();
+        System.out.println("\n");
+        System.out.println("Counting in map : " +ansmap);
         System.out.println("\n");
         System.out.println("One time  = "+ansmap.get(1));
         System.out.println("\n");
