@@ -1,8 +1,6 @@
 package in.co.nmsworks.exercise3;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class CheckDuplicate {
     public void checkDuplicates(List<Integer> arrayList)
@@ -16,8 +14,8 @@ public class CheckDuplicate {
             int item = arrayList.get(i);
             if(uniqueSet.contains(item))
             {
-                duplicateCount++;
                 System.out.println(item + " is Duplicate");
+                duplicateCount++;
             }
             else
             {

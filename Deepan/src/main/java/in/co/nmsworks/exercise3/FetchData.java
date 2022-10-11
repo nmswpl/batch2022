@@ -9,10 +9,9 @@ public class FetchData {
     public static List<Integer> readFileAndGetIntList(String path) {
         List<Integer> arrayList = new ArrayList<>();
 
-        try {
-            FileReader fileReader = new FileReader(path);
-            BufferedReader bf = new BufferedReader(fileReader);
-
+        try ( FileReader fileReader = new FileReader(path);
+              BufferedReader bf = new BufferedReader(fileReader))
+        {
             String line;
             while ((line = bf.readLine()) != null) {
 
