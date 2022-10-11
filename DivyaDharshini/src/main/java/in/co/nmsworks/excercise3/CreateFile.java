@@ -16,6 +16,7 @@ public class CreateFile {
             while ((str = br.readLine()) != null) {
                 integers.add(Integer.valueOf(str));
             }
+            System.out.println("Original file :");
             return integers;
         }
     }
