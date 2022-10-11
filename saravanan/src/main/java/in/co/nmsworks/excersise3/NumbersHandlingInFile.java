@@ -12,8 +12,9 @@ public class NumbersHandlingInFile
     {
         List<Integer> listArray =new ArrayList<>();
 
-        try {
-            BufferedReader read = new BufferedReader(new FileReader(fileAddress));
+        try (BufferedReader read = new BufferedReader(new FileReader(fileAddress)))
+        {
+
             String str;
             int temp;
             while ((str = read.readLine()) != null)
