@@ -9,13 +9,15 @@ public class NumberOfOccurance {
     {
         Map<Integer,Integer> integerMap=new HashMap<>();
         for (int i : original) {
-            int count = 0;
-            for (int j : original) {
-                if (i == j) {
-                    count++;
-                }
+            if(integerMap.containsKey(i))
+            {
+                int count= integerMap.get(i);
+                integerMap.put(i,count+1);
             }
-            integerMap.put(i, count);
+            else
+            {
+                integerMap.put(i,1);
+            }
         }
         System.out.println("\nCount : "+integerMap);
         return integerMap.size();
