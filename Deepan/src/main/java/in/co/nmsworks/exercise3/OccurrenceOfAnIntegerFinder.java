@@ -4,10 +4,10 @@ import java.util.*;
 
 public class OccurrenceOfAnIntegerFinder {
 
-    public static void occurrenceOfAnInteger(List<Integer> numbersList) {
+    public static Map<Integer, Integer> occurrenceOfAnInteger(List<Integer> numberList) {
 
         Map<Integer, Integer> numToNumCount = new HashMap<>();
-        for (Integer num : numbersList) {
+        for (Integer num : numberList) {
             if (numToNumCount.containsKey(num)) {
                 Integer numCount = numToNumCount.get(num);
                 numToNumCount.put(num, numCount + 1);
@@ -16,11 +16,7 @@ public class OccurrenceOfAnIntegerFinder {
             }
         }
         System.out.println(numToNumCount);
-    }
-
-    public static void main(String[] args) {
-        List<Integer> elements = FetchData.readFileAndGetIntList("/home/nmsadmin/Downloads/Numbers.txt");
-        occurrenceOfAnInteger(elements);
+        return numToNumCount;
 
     }
 }
