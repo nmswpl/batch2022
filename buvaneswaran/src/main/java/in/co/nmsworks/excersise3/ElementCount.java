@@ -1,14 +1,17 @@
 package in.co.nmsworks.excersise3;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.*;
 
 public class ElementCount
 {
-    public Map<Integer,Integer> countInteger(List<Integer> list)
+    public Map<Integer,List<Integer>>  countInteger(List<Integer> list)
     {
         Map<Integer,Integer> countElenemt = new HashMap<>();
+        Map<Integer,List<Integer>> countOfEachElement=new HashMap<>();
         for (Integer temp : list)
         {
             if (countElenemt.containsKey(temp))
@@ -18,21 +21,23 @@ public class ElementCount
                 countElenemt.put(temp,1);
             }
         }
-        return countElenemt;
+        for (Integer a : countElenemt.keySet())
+        {
+            if (countOfEachElement.containsKey(countElenemt.get(a)))
+            {
+                countOfEachElement.get(countElenemt.get(a)).add(a);
+            }
+            else
+            {
+                List<Integer> list2 = new ArrayList<>();
+                list2.add(a);
+                countOfEachElement.put(countElenemt.get(a), list2);
+            }
+        }
+        return countOfEachElement;
     }
 
-    public static void main(String[] args)throws Exception
-    {
-        FileReading fileHandling=new FileReading();
-        List<Integer> result=fileHandling.readFile("/home/nmsadmin/Downloads/Numbers.txt");
-        System.out.println(result);
 
-        RemoveDuplicateInteger duplicateInteger=new RemoveDuplicateInteger();
-        List<Integer> duplicate=duplicateInteger.duplicateElementRemove(result);
-        System.out.println(duplicate);
 
-        ElementCount countDuplicate=new ElementCount();
-        Map<Integer,Integer> count=countDuplicate.countInteger(result);
-        System.out.println(count);
-    }
+
 }
