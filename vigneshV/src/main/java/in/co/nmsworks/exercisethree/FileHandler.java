@@ -19,28 +19,23 @@ public class FileHandler
     private static void findOccurrence(List<Integer> numbers)
     {
         Map<Integer,Integer> map = new HashMap<>();
-        List<Integer> oneTime = new ArrayList<>();
-        List<Integer> twoTime = new ArrayList<>();
-        List<Integer> threeTimes = new ArrayList<>();
-        List<Integer> fourTimes = new ArrayList<>();
         for(int i :numbers)
             map.put(i,map.getOrDefault(i,0)+1);
-        for (Map.Entry<Integer,Integer> i: map.entrySet())
+        Map<Integer,List<Integer>> noOfOccurance = new HashMap<>();
+        Set<Integer> valuesSet = new HashSet<>(map.values());
+        for(int i:valuesSet)
         {
-            if(i.getValue()==1)
-                oneTime.add(i.getKey());
-            else if(i.getValue()==2)
-                twoTime.add(i.getKey());
-            else if(i.getValue()==3)
-                threeTimes.add(i.getKey());
-            else if(i.getValue()==4)
-                fourTimes.add(i.getKey());
+            List<Integer> list = new ArrayList<>();
+            for(Map.Entry<Integer, Integer> j:map.entrySet())
+            {
+                if(j.getValue()==i) {
+                    list.add(j.getKey());
+                }
+            }
 
+            noOfOccurance.put(i,list);
         }
-        System.out.println("\nOne Time Found - "+oneTime);
-        System.out.println("Two Time Found - "+twoTime);
-        System.out.println("Three Time Found - "+threeTimes);
-        System.out.println("Four Time Found - "+fourTimes);
+        System.out.println("\n"+noOfOccurance);
     }
 
 
