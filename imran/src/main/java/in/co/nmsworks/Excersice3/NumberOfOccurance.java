@@ -20,42 +20,34 @@ public class NumberOfOccurance
             mymap.put(i, count);
 
         }
-        System.out.println("\n");
-        System.out.println("Count : "+mymap);
 
         Map<Integer,List<Integer>> ansmap = new HashMap<>();
 
         for (Map.Entry<Integer,Integer> entry : mymap.entrySet())
         {
-            List<Integer> listforOccurance = new ArrayList<>();
-            if(!ansmap.containsKey(entry.getValue()))
-            {
 
+            if(ansmap.containsKey(entry.getValue()))
+            {
+                List<Integer> listforOccurance = ansmap.get(entry.getValue());
+                listforOccurance.add(entry.getKey());
+            }
+            else
+            {
+                List<Integer> listforOccurance = new ArrayList<>();
+                listforOccurance.add(entry.getKey());
                 ansmap.put(entry.getValue(),listforOccurance);
 
             }
-            List<Integer> listforOccurance1 = ansmap.get(entry.getValue());
-            listforOccurance1.add(entry.getKey());
 
         }
-//        System.out.println(ansmap.get(1));
-//        Set<Integer> myset = new HashSet<>(mymap.values());
-//        for (int i : myset)
-//        {
-//
-//            for (Map.Entry<Integer, Integer> entry : mymap.entrySet())
-//            {
-//                if(entry.getValue() == i)
-//                {
-//                    listforOccurance.add(entry.getKey());
-//                }
-//            }
-//            ansmap.put(i,listforOccurance);
-//            System.out.println("\n");
-//            System.out.println(i+" time  = "+ansmap.get(i));
-//        }
+        System.out.println("Number of occurance  in map : " +ansmap);
         System.out.println("\n");
-        System.out.println("Counting in map : " +ansmap);
 
+        //For Printing Map's values
+        Set<Integer> myset = new HashSet<>(ansmap.keySet());
+        for (int i : myset)
+        {
+            System.out.println(i +  " times = " +  ansmap.get(i));
+        }
     }
 }

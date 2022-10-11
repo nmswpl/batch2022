@@ -15,6 +15,7 @@ public class FindDuplicatesMain
         System.out.println("Original List : "+readedFileList);
         System.out.println("\n");
         System.out.println("DuplicateList : "+duplicateValueList);
+        System.out.println("\n");
         numberOfOccurance(readedFileList);
 
     }
