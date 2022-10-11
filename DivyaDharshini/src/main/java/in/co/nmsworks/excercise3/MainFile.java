@@ -11,6 +11,10 @@ public class MainFile {
         System.out.println(a);
 
         Duplicate duplicate=new Duplicate();
-        System.out.println(duplicate.duplicateFile(a));
-          }
+        List<Integer> b=duplicate.duplicateFile(a);
+        System.out.println(b);
+
+        CountDuplicate number=new CountDuplicate();
+        System.out.println(number.countDuplicate(a));
+      }
 }
