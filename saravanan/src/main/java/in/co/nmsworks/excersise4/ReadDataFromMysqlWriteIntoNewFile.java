@@ -9,9 +9,9 @@ public class ReadDataFromMysqlWriteIntoNewFile
     {
          try(FileWriter writeIntoMaleDetails = new FileWriter("/home/nmsadmin/Downloads/userdetailsofmaleonly.txt");
              FileWriter writeIntoFemaleDetails = new FileWriter("/home/nmsadmin/Downloads/userdetailsfemaleonly.txt");
-             Connection con = DriverManager.getConnection("jdbc:mysql://localhost/saro"))
+             Connection con = DriverManager.getConnection("jdbc:mysql://localhost/saro");
+            PreparedStatement sts = con.prepareStatement("select * from user_details"))
          {
-             PreparedStatement sts = con.prepareStatement("select * from user_details");
 
              ResultSet resultTable = sts.executeQuery();
             // ResultSetMetaData columnName = resultTable.getMetaData();
@@ -26,7 +26,6 @@ public class ReadDataFromMysqlWriteIntoNewFile
                       writeIntoMaleDetails.write(sqlColumn2+"  "+sqlColumn3 +" "+sqlColumn4+" "+sqlColumn5+"\n");
                  else
                      writeIntoFemaleDetails.write(sqlColumn2+"  "+sqlColumn3 +" "+sqlColumn4+" "+sqlColumn5+"\n");
-
              }
          }
          catch (Exception e)
