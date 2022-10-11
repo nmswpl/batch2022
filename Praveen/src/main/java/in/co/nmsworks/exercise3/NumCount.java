@@ -13,7 +13,7 @@ public class NumCount {
         new NumCount().printCount(numberList);
     }
 
-    public void printCount(List<Integer> numberList) {
+    public  Map<Integer, Integer>  printCount(List<Integer> numberList) {
         Map<Integer, Integer> countNum = new HashMap<>();
         for (int i = 0; i < numberList.size(); i++) {
             int num = numberList.get(i);
@@ -21,16 +21,17 @@ public class NumCount {
              if (countNum.containsKey(num)) {
                 int count=countNum.get(num);
                 count++;
-                countNum.put(num,count);
+             countNum.put(num,count);
             } else {
 
                 countNum.put(num,1);
             }
 
         }
-        System.out.println(countNum);
-        System.out.println(countNum.size());
+//        System.out.println(countNum);
+//        System.out.println(countNum.size());
 
-        }
+        return countNum;
+    }
     }
 
