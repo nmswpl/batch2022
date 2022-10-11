@@ -9,13 +9,7 @@ import java.util.Map;
 public class FindOccurence {
 
     public static void main(String[] args) throws IOException {
-
-        ReadingFileExercise3 r=new ReadingFileExercise3();
-        List<Integer> result= r.readingFiles("/home/nmsadmin/Downloads/Numbers.txt");
-
-        int temp;
-        //int count=0;
-        List<Integer> dup=new ArrayList<>();
+        List<Integer> result= ReadingFileExercise3.readingFiles("/home/nmsadmin/Downloads/Numbers.txt");
 
         Map<Integer, Integer> occurenceOfElement=new HashMap<>();
 
@@ -44,8 +38,32 @@ public class FindOccurence {
 
             }
 
+/// finding each time occurence ....
+
+            Map<Integer, List<Integer>> eachtime=new HashMap<>();
+
+            for(Integer keys: occurenceOfElement.keySet())
+            {
 
 
+                Integer valOfMap= occurenceOfElement.get(keys);
+
+                if(eachtime.containsKey(valOfMap))
+                {
+                    eachtime.get(valOfMap).add(keys);
+
+
+                }
+
+                else
+                {
+                    List<Integer> lis=new ArrayList<>();
+                    lis.add(keys);
+                    eachtime.put(valOfMap,lis);
+                }
+
+            }
+            System.out.print(eachtime);
 
         }
         catch (Exception e)
@@ -55,7 +73,9 @@ public class FindOccurence {
 
 
 
-        System.out.println(occurenceOfElement);
+      //  System.out.println(occurenceOfElement);
+
+        //System.out.println(eachtime.size());
 
 
     }
