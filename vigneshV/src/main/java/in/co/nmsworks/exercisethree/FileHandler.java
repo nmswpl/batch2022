@@ -11,18 +11,18 @@ public class FileHandler
     {
         ReadFile filereader = new ReadFile();
         List<Integer> numbers = new ArrayList<>(filereader.fileParser("/home/nmsadmin/Downloads/Numbers.txt"));
-        searchDuplicate(numbers);
+        findRepeatedNumbers(numbers);
         FindOccurrence.occurrenceCount(numbers);
     }
 
 
-    private static void searchDuplicate(List<Integer> numbers)
+    private static void findRepeatedNumbers(List<Integer> numbers)
     {
-        Set<Integer> duplicateNum = new HashSet<>();
+        Set<Integer> repeatedNumbers = new HashSet<>();
         for(int i:numbers)
         {
-            if(!duplicateNum.contains(i))
-                duplicateNum.add(i);
+            if(!repeatedNumbers.contains(i))
+                repeatedNumbers.add(i);
             else
                 System.out.print(" "+i);
         }
