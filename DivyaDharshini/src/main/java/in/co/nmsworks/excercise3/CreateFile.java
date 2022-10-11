@@ -9,12 +9,14 @@ public class CreateFile {
 
     public List<Integer> readFile(String filePath) throws Exception {
         File file = new File(filePath);
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String str;
-        List<Integer> integers=new ArrayList<>();
-        while ((str = br.readLine()) != null) {
-            integers.add(Integer.valueOf(str));
+        try(FileReader fr=new FileReader(file);
+        BufferedReader br = new BufferedReader(fr)) {
+            String str;
+            List<Integer> integers = new ArrayList<>();
+            while ((str = br.readLine()) != null) {
+                integers.add(Integer.valueOf(str));
+            }
+            return integers;
         }
-        return integers;
     }
 }
