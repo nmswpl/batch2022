@@ -11,14 +11,19 @@ public class ReadElements {
             List<Integer> integer = new ArrayList<>();
             BufferedReader br = new BufferedReader(new FileReader(filepath));
             String text;
-       
+        try {
             while ((text = br.readLine()) != null) {
                 integer.add(Integer.parseInt(text));
             }
             //  System.out.println(integer);
             br.close();
 
-     
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+
+        }
         return integer;
 
     }
