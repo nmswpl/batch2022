@@ -4,7 +4,7 @@ import java.io.*;
 import java.sql.*;
 
 
-public class ReadingFromDataBaseAndWriteToTextFile {
+public class ReadingDataFromDataBaseAndWriteIntoTextFile {
     public static void readFileAndWrite() {
         try (FileWriter fileWriterMale = new FileWriter("/home/nmsadmin/Desktop/male.txt");
              FileWriter fileWriterFemale = new FileWriter("/home/nmsadmin/Desktop/female.txt");
