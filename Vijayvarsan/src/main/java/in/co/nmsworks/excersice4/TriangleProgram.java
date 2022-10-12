@@ -12,8 +12,6 @@ public class TriangleProgram {
             }
             System.out.println();
             ch++;
-
         }
-
     }
 }
