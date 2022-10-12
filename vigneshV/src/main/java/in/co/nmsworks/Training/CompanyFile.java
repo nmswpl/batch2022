@@ -75,7 +75,7 @@ public class CompanyFile
             for(Company c : companies) {
                 insertStmt.setString(1, c.getCompanyName());
                 insertStmt.setInt(2, c.getId());
-                insertStmt.setDouble(3, c.getRevenue());
+                insertStmt.setFloat(3, c.getRevenue());
                 insertStmt.setFloat(4, c.getNumofemp());
                 insertStmt.setString(5, c.getSector());
                 insertStmt.setString(6, c.getCeo());
