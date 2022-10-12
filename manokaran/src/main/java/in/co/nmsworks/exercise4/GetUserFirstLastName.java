@@ -1,5 +1,5 @@
 package in.co.nmsworks.exercise4;
-// get the user first name and last name from table
+// get the user first name and last name
 
 import java.sql.*;
 import java.util.ArrayList;
