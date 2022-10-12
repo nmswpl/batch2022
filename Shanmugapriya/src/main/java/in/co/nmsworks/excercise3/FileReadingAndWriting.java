@@ -8,43 +8,44 @@ import java.sql.*;
 
 public class FileReadingAndWriting {
     public static void main(String[] args) throws SQLException, IOException {
+
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/Training");
 
-        PreparedStatement stmt = conn.prepareStatement("select * from user_details;");
-        ResultSet resultSet = stmt.executeQuery();
+        PreparedStatement stmt1 = conn.prepareStatement("select * from user_details");
+        ResultSet resultSet1 = stmt1.executeQuery();
 
             File file1 = new File("/home/nmsadmin/Downloads/Male.txt");
             File file2 = new File("/home/nmsadmin/Downloads/FeMale.txt");
 
-       try  (  FileWriter fileWriterMale = new FileWriter(file1);
-               FileWriter fileWriterFemale = new FileWriter(file2))
-       {
+
+        try (FileWriter fileWriterMale = new FileWriter(file1);
+             FileWriter fileWriterFemale = new FileWriter(file2)) {
 
 
-           while (resultSet.next())
-           {
-                String gender = resultSet.getString("gender");
-                String userid = resultSet.getString(1);
-                String firstname = resultSet.getString(3);
-                String lastname = resultSet.getString(4);
+            while (resultSet1.next()) {
+                String gender = resultSet1.getString("gender");
+                String userid = resultSet1.getString(1);
+                String firstname = resultSet1.getString(3);
+                String lastname = resultSet1.getString(4);
+                String u = resultSet1.getString("username");
+                System.out.println("userdetails" + u);
 
                 if (gender.equals("Male")) {
-                    fileWriterMale.write(String.format(userid+" "+firstname+" "+lastname+"\n"));
-
-
-                }
-                else if(gender.equals("Female"))
-                {
-                    fileWriterFemale.write(String.format(userid+" "+firstname+" "+lastname));
+                    fileWriterMale.write(String.format(userid + " " + firstname + " " + lastname + "\n"));
+                } else if (gender.equals("Female")) {
+                    fileWriterFemale.write(String.format(userid + " " + firstname + " " + lastname));
                     fileWriterFemale.write("\n");
                 }
+
 
             }
 
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
         }
     }
+    }
 
-}
+
+
