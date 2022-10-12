@@ -9,7 +9,9 @@ public class ReadingDataFromDataBaseAndWriteIntoTextFile {
         try (FileWriter fileWriterMale = new FileWriter("/home/nmsadmin/Desktop/male.txt");
              FileWriter fileWriterFemale = new FileWriter("/home/nmsadmin/Desktop/female.txt");
              Connection con = DriverManager.getConnection("jdbc:mysql://localhost/training");
-             PreparedStatement stmt = con.prepareStatement("SELECT * FROM user_details")) {
+             PreparedStatement stmt = con.prepareStatement("SELECT * FROM user_details"))
+        {
+
 
             ResultSet resultSet = stmt.executeQuery();
 
@@ -21,10 +23,12 @@ public class ReadingDataFromDataBaseAndWriteIntoTextFile {
 
             while (resultSet.next())
             {
+
                 String gender = resultSet.getString("gender");
                 String username = resultSet.getString(2);
                 String firstname = resultSet.getString(3);
                 String lastname = resultSet.getString(4);
+                String password = resultSet.getString("password");
 
                 if (gender.equals("Male")) {
                     fileWriterMale.write(String.format("%-20s %-20s %-20s\n", username, firstname, lastname));
