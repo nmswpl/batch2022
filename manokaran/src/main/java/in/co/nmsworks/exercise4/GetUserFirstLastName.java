@@ -8,13 +8,12 @@ import java.util.List;
 public class GetUserFirstLastName
 {
     public static void main(String[] args) throws SQLException {
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/Training");
-        PreparedStatement stmt1 = conn.prepareStatement("select user_name from user_login");
-        ResultSet u_name = stmt1.executeQuery();
-        PreparedStatement stmt2 = conn.prepareStatement("select username,first_name,last_name from user_details");
-        ResultSet names = stmt2.executeQuery();
         List<String> user_name = new ArrayList<>();
-        try
+        try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/Training");
+            PreparedStatement stmt1 = conn.prepareStatement("select user_name from user_login");
+            ResultSet u_name = stmt1.executeQuery();
+            PreparedStatement stmt2 = conn.prepareStatement("select username,first_name,last_name from user_details");
+            ResultSet names = stmt2.executeQuery();)
         {
             while (u_name.next())
             {
@@ -31,12 +30,6 @@ public class GetUserFirstLastName
         catch (Exception e)
         {
             e.printStackTrace();
-        }
-        finally {
-            u_name.close();
-            names.close();
-            stmt1.close();
-            conn.close();
         }
     }
 }
