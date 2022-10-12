@@ -33,7 +33,7 @@ public class CountElement
 
 
 
-        for(Integer a : numberCountMap.keySet())
+        for(Integer a : numberCountMap.keySet())//entry set means[1,3],[2,4]
         {
             Integer temp = numberCountMap.get(a);
             if(elementlist.containsKey(temp))
