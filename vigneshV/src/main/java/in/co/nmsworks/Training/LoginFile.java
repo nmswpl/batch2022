@@ -1,27 +1,52 @@
 package in.co.nmsworks.Training;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class LoginFile
 {
-    public static void loginTimeFile(Statement st) throws SQLException, IOException
-    {
-        String userNameQuery = "SELECT user_name FROM user_login";
-        ResultSet s = st.executeQuery(userNameQuery);
+    public static void main (String[] args) throws SQLException {
 
-        try(BufferedWriter loginFileWriter = new BufferedWriter(new FileWriter("/home/nmsadmin/git/batch2022/vigneshV/src/main/java/in/co/nmsworks/Training/loginuser.txt")))
-        {
-            while (s.next())
-                System.out.println(s.getString(1));
-        }
+
+       Connection con= DriverManager.getConnection("jdbc:mysql://localhost/Training");
+
+           String userNameQuery = "SELECT username FROM user_login";
+           PreparedStatement userNameStmt = con.prepareStatement(userNameQuery);
+           ResultSet userNameSet = userNameStmt.executeQuery();
+
+
+           String userDetailsQuery = "SELECT username, first_name, last_name FROM user_details";
+           PreparedStatement userDetailsStmt = con.prepareStatement(userDetailsQuery);
+           ResultSet userDetails = userDetailsStmt.executeQuery();
+
+           Map<String, List<String>> usernameMap = new HashMap<>();
+
+           while(userDetails.next()) {
+               List<String> list = new ArrayList<>();
+               list.add(userDetails.getString(2));
+               list.add(userDetails.getString(3));
+
+               String userName = userDetails.getString(1);
+               usernameMap.put(userName, list);
+           }
+
+           while (userNameSet.next()) {
+               String userNameInLoginTable = userNameSet.getString(1);
+
+               if (usernameMap.containsKey(userNameInLoginTable)) {
+                   String firstName = usernameMap.get(userNameInLoginTable).get(0);
+                   String lastName = usernameMap.get(userNameInLoginTable).get(1);
+                   System.out.println(firstName + ", " + lastName);
+               }
+           }
+
+       }
 
 
     }
 
 
-}
