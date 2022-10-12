@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class PrintingCharacters
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner S = new Scanner(System.in);
         System.out.println("Enter the number of Character :");
         int num = S.nextInt();
