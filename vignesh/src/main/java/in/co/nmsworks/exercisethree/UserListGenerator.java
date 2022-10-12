@@ -24,8 +24,21 @@ public class UserListGenerator {
     }
 
     public static void main(String[] args) {
+
+
+
         File file = new File("/home/nmsadmin/Downloads/Writehere/male.txt");
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         File file2 = new File("/home/nmsadmin/Downloads/Writehere/female.txt");
+        try {
+            file2.createNewFile();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/Training");
             PreparedStatement statement = connection.prepareStatement("select user_id,username,first_name,last_name from user_details where gender = 'male';");
