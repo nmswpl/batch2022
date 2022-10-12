@@ -27,7 +27,7 @@ public class CompanySurvey {
             {
                 String[] column = line.split(",");
 
-                //Using try catch to skip the missing index(column)
+                //Using try catch to handle the missing index(column)
                 try
                 {
                     String tempCompany = column[0];
@@ -52,9 +52,7 @@ public class CompanySurvey {
                     Company company = new Company(tempCompany,tempId,tempRevenue,tempEmployeeCount,tempSector,tempCeo);
                     companyList.add(company);
                 }
-
             }
-
         }
         catch (Exception e)
         {
