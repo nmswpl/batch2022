@@ -12,7 +12,7 @@ public class LoginFile
     public static void main (String[] args) throws SQLException {
 
 
-       Connection con= DriverManager.getConnection("jdbc:mysql://localhost/Training");
+           Connection con= DriverManager.getConnection("jdbc:mysql://localhost/Training");
 
            String userNameQuery = "SELECT username FROM user_login";
            PreparedStatement userNameStmt = con.prepareStatement(userNameQuery);
@@ -25,7 +25,8 @@ public class LoginFile
 
            Map<String, List<String>> usernameMap = new HashMap<>();
 
-           while(userDetails.next()) {
+           while(userDetails.next())
+           {
                List<String> list = new ArrayList<>();
                list.add(userDetails.getString(2));
                list.add(userDetails.getString(3));
@@ -34,19 +35,18 @@ public class LoginFile
                usernameMap.put(userName, list);
            }
 
-           while (userNameSet.next()) {
+           while (userNameSet.next())
+           {
                String userNameInLoginTable = userNameSet.getString(1);
 
-               if (usernameMap.containsKey(userNameInLoginTable)) {
+               if (usernameMap.containsKey(userNameInLoginTable))
+               {
                    String firstName = usernameMap.get(userNameInLoginTable).get(0);
                    String lastName = usernameMap.get(userNameInLoginTable).get(1);
                    System.out.println(firstName + ", " + lastName);
                }
            }
-
-       }
-
-
+        }
     }
 
 
