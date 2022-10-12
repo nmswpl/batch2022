@@ -8,7 +8,6 @@ public class PrintDuplicates {
         ReadAFile readAFile = new ReadAFile();
         List<Integer>list=new ArrayList<>(readAFile.fileParse(filePath));
         System.out.println(list);
-       findDuplicates(list);
        countTheNumbers(list);
     }
 
@@ -28,7 +27,7 @@ public class PrintDuplicates {
             }
 
         }
-        System.out.println(count);
+        System.out.println("count = "+count);
     }
 
     public static void countTheNumbers(List<Integer>list)
@@ -38,14 +37,16 @@ public class PrintDuplicates {
 
             if (map.containsKey(temp))
             {
-                Integer count=map.get(temp);
-                map.put(temp,count+1);
+
+                map.put(temp,map.get(temp)+1);
 
             }
             else {
                 map.put(temp,1);
             }
+
         }
+
 
         Map<Integer, List<Integer>> listMap = new HashMap<>();
         Set<Integer> keySet = map.keySet();
