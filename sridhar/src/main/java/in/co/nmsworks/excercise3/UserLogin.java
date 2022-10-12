@@ -11,6 +11,7 @@ public class UserLogin {
         String queries1="SELECT * FROM user_details";
         String jdbcPath="jdbc:mysql://localhost/Training";
         UserLogin.createAndInsertValues(jdbcPath,queries,queries1);
+
     }
     public static void createAndInsertValues(String jdbcPath,String queries,String queries1)
     {
