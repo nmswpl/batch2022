@@ -8,6 +8,7 @@ public class ListDuplicate {
         ListDuplicate rd = new ListDuplicate();
         List<Integer> result = rd.findDuplicate(numbersList);
         System.out.println("Duplicates "+result.size());
+        System.out.println("Duplicates "+result);
     }
     public List<Integer> findDuplicate(List<Integer> numberList) {
         Set<Integer> duplicateSet=new HashSet<>();
