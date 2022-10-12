@@ -27,7 +27,7 @@ public class NumberOccurrenceComputer {
     public static void main(String[] args) {
 
         List<Integer> intputList = FileParsing.readFileAndGetIntList("/home/nmsadmin/Downloads/Numbers.txt");
-        HashMap<Integer,Integer> outputList = countOfNumbers(intputList);
-        System.out.println(outputList);
+        HashMap<Integer,Integer> numToNumCount = countOfNumbers(intputList);
+        System.out.println(numToNumCount);
     }
 }
