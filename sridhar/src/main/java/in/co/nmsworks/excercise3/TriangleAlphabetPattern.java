@@ -2,7 +2,7 @@ package in.co.nmsworks.excercise3;
 
 import java.util.Scanner;
 
-public class RectangleAlphabet
+public class TriangleAlphabetPattern
 {
     public static void main(String[] args)
     {
