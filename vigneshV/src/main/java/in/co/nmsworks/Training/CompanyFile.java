@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class CompanyFile
 {
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args) throws Exception
     {
 
 
@@ -19,6 +19,7 @@ public class CompanyFile
         List<Company> company = fileReader(filePath);
 
        searchSector(company);
+       saveCompanyDetails(company);
 
 
     }
