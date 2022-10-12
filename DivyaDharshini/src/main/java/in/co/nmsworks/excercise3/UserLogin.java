@@ -16,9 +16,7 @@ public class UserLogin {
 
                  ResultSet resultSet = stmt.executeQuery();
                  ResultSet resultSet1 = stmt1.executeQuery();
-
                  List<String> list = new ArrayList<>();
-
                  while (resultSet.next()) {
                      list.add(resultSet.getString(2));
                  }
@@ -28,7 +26,7 @@ public class UserLogin {
                      String firstName = resultSet1.getString(3);
                      String lastName = resultSet1.getString(4);
                      if (list.contains(userName)) {
-                         System.out.println(firstName + "\t\t" + lastName);
+                         System.out.println(firstName + "," + lastName);
                      }
                  }
              }
