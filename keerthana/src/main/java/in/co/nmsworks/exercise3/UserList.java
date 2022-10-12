@@ -20,7 +20,6 @@ public class UserList
                    String values = (rs.getString(2) + "                 " + rs.getString(3) + "                       " + rs.getString(4) + "\n");
                    br.write(values);
 
-
            }
 
         }
