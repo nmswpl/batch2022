@@ -47,10 +47,4 @@ public class Company
     public String getCeo() {
         return ceo;
     }
-
-    public String toString()
-    {
-        return company + " , " + ceo;
-    }
-
 }
