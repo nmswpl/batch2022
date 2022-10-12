@@ -41,17 +41,8 @@ public class CreateFiles {
 
     }
 
-    public static void loginTimeFile(Statement st) throws SQLException, IOException
-    {
-        ResultSet s = st.executeQuery("SELECT first_name,last_name FROM user_details   WHERE   EXISTS (SELECT 1 FROM user_login WHERE user_details.user_id = user_login.id)");
-
-        try(BufferedWriter loginFileWriter = new BufferedWriter(new FileWriter("/home/nmsadmin/git/batch2022/vigneshV/src/main/java/in/co/nmsworks/Training/loginuser.txt")))
-        {
-            while (s.next())
-                loginFileWriter.write(s.getString(1)+' '+s.getString(2)+'\n');
-        }
 
 
     }
-}
+
 

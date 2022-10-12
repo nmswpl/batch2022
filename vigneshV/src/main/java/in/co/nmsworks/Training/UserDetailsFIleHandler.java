@@ -14,7 +14,6 @@ public class UserDetailsFIleHandler
         Connection con= DriverManager.getConnection("jdbc:mysql://localhost/Training");
         Statement st = con.createStatement();
         CreateFiles.genderFile(st);
-        CreateFiles.loginTimeFile(st);
 
         st.close();
         con.close();
