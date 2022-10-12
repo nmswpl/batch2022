@@ -23,11 +23,11 @@ public class JDBCSample {
                 String gender= result.getString("gender");
                 if (gender.equalsIgnoreCase("female"))
                 {
-                    femaleDetails.write(userName+"|"+firstName + "|" + lastName + "|" + gender +"\n");
+                    femaleDetails.write(userName+"|"+firstName + "|" + lastName + "|" +"\n");
 
                 }
                 else {
-                    maleDetails.write(userName+"|"+firstName + "|" + lastName + "|" + gender +"\n");
+                    maleDetails.write(userName+"|"+firstName + "|" + lastName + "|"+"\n");
                 }
             }
 
