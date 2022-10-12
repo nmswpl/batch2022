@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.sql.*;
 
-import static javax.swing.UIManager.getString;
+
 
 public class FileReading {
 
