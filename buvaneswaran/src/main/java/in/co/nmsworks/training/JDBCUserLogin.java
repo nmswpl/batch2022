@@ -11,7 +11,7 @@ public class JDBCUserLogin
     public void select1()
     {
         List<String> unameFromUserLogin=new ArrayList<>();
-        Map<String,List<String>> userDetails=new HashMap<>();
+        Map<String,String> userDetails=new HashMap<>();
 
         try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost/Training");
              PreparedStatement p = con.prepareStatement("SELECT * FROM User_login");
@@ -27,18 +27,26 @@ public class JDBCUserLogin
                 {
                     String uDetails = resultSet1.getString("username");
                     String s3 = resultSet1.getString("first_name") + "," + resultSet1.getString("last_name");
-                    for (String userNameCheck : unameFromUserLogin)
-                    {
-                        if (userNameCheck.equals(uDetails))
-                        {
-                            List<String> list=new ArrayList<>();
-                            list.add(s3);
-                            userDetails.put(uDetails,list);
-                        }
-                    }
+                    userDetails.put(uDetails,s3);
+//                    for (String userNameCheck : unameFromUserLogin)
+//                    {
+//                        if (userNameCheck.equals(uDetails))
+//                        {
+//                            List<String> list=new ArrayList<>();
+//                            list.add(s3);
+//                            userDetails.put(uDetails,list);
+//                        }
+//                    }
                 }
             }
-            System.out.println(userDetails);
+            for (String str: unameFromUserLogin)
+            {
+                if (userDetails.containsKey(str))
+                {
+                    System.out.println(userDetails.get(str));
+                }
+            }
+           // System.out.println(userDetails);
         }
         catch (Exception e)
         {
