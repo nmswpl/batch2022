@@ -1,6 +1,5 @@
 package in.co.nmsworks.excersise4;
 
-
 import java.io.FileWriter;
 import java.sql.*;
 
