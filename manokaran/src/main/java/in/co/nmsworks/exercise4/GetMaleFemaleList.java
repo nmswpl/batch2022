@@ -24,17 +24,19 @@ public class GetMaleFemaleList
                 List<String> row = new ArrayList<>();
                 if(set.getString(5).equals("Male"))
                 {
-                    for(int i = 1; i <= columnCount; i ++) {
-                        row.add(set.getString(i));
-                    }
-                    maleFileWriter.write(String.valueOf(row) + "\n");
+                    maleFileWriter.write(set.getString(2)+" , " + set.getString(3) + " , " + set.getString(4));
+                    maleFileWriter.write("\n");
                 }
                 else
                 {
                     for(int i = 1; i <= columnCount; i ++) {
-                        row.add(set.getString(i));
+                        if(i >=2 && i <= 4){row.add(set.getString(i));}
                     }
-                    femaleFileWriter.write(String.valueOf(row) + "\n");
+                    for (String s : row) {
+                        femaleFileWriter.write(String.valueOf(s)+ " , ");
+                    }
+                    femaleFileWriter.write("\n");
+
                 }
             }
         }
