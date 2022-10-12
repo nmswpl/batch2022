@@ -7,7 +7,7 @@ public class AlphabetPatten {
             System.out.println("Enter");
             int n = sc.nextInt();
             int i, j;
-            for (i = 0; i <= n; i++) {
+            for (i = 1; i <= n; i++) {
                 for (j = 1; j <= i; j++) {
                     System.out.print((char) (96 + i));
                 }
