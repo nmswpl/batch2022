@@ -29,13 +29,13 @@ public class UserList {
             String gender=usrresult.getString("gender");
              if(gender.equals("Male"))
              {
-                 write1.write(username+"       "+firstname+"          "+lastname+"       "+"\n");
+                 write1.write(username+"               "+firstname+"                 "+lastname+"       "+"\n");
 
 
              }
              if(gender.equals("Female"))
                {
-               write2.write(username+"       "+firstname+"          "+lastname+"       "+"\n");
+               write2.write(username+"                 "+firstname+"                  "+lastname+"       "+"\n");
 
            }
 
@@ -43,6 +43,7 @@ public class UserList {
        }
        catch(Exception e)
        {
+           System.err.println("Exception Error");
            e.printStackTrace();
        }
 
