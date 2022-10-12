@@ -17,7 +17,6 @@ public class UserDetails {
         try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost/Training");
              PreparedStatement st = con.prepareStatement("SELECT * FROM user_details WHERE gender = 'Male';");
              FileWriter writer = new FileWriter(file)) {
-
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("user_id");

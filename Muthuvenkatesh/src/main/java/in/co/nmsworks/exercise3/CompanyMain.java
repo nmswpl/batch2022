@@ -56,25 +56,3 @@ public class CompanyMain {
         buffer.close();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//                if(employee[4].contains(sector) && employee[3].contains(noOfEmployee)){
-//                    System.out.println(employee[0] + " | " + employee[5]);
-//                }
