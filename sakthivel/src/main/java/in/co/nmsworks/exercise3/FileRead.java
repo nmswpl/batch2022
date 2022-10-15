@@ -11,8 +11,6 @@ public class FileRead
     {
         // Reading
 
-//        FileReader file =null;
-//        BufferedReader br=null;
          List<Integer> list = new ArrayList<>();
         try ( FileReader file  = new FileReader(filePath);
             BufferedReader br = new BufferedReader(file))
@@ -25,27 +23,6 @@ public class FileRead
             }
 
         }
-//        catch (Exception e)
-//        {
-//            //System.out.println(list);
-//            System.err.println("error occured");
-//        }
-//
-//        finally
-//        {
-//            try
-//            {
-//                if(br!=null)
-//                    br.close();
-//                if(file!=null)
-//                    file.close();
-//            }
-//            catch(Exception e)
-//            {
-//                System.out.println("Error Occured");
-//            }
-//
-//        }
 
         return list;
     }

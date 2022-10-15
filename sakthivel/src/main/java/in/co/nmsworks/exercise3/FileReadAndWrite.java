@@ -27,8 +27,6 @@ public class FileReadAndWrite {
             female.createNewFile();
 
 
-
-
             ResultSet data= stmt.executeQuery();
 
             while (data.next())
